@@ -1,0 +1,107 @@
+CU-05: Atender Cita — Diagrama de Clases de Diseño
+Métodos tomados del Diagrama de Secuencia de Diseño · sin vistas JSP · capas: Servlet (rojo) · Service (azul) · DAO (morado) · Entidad (amarillo)
+«Servlet» AtenderCitaControlador
+- atencionService: AtencionService
++ doGet(request:HttpServletRequest, response:HttpServletResponse): void
++ doPost(request:HttpServletRequest, response:HttpServletResponse): void
+- ruteador(request:HttpServletRequest, response:HttpServletResponse): void
++ solicitarIngreso(): void
++ consultarCitasAsignadas(): void
++ seleccionarCita(idCita:int): void
++ consultarHistorialMenor(idPerfilMenor:int): void
++ solicitarRegistroAtencion(idCita:int): void
++ ingresarInformacionAtencion(datos:Map): void
++ confirmarRegistro(): void
++ solicitarRegistroInasistencia(idCita:int): void
++ ingresarObservacionYConfirmar(idCita:int, observacion:String): void
++ cancelarRegistroAtencion(): void
+- descartarDatosNoConfirmados(): void
+«Service» AtencionService
+- especialistaDAO: EspecialistaDAO
+- citaDAO: CitaDAO
+- perfilMenorDAO: PerfilMenorDAO
+- historialAtencionDAO: HistorialAtencionDAO
+- atencionDAO: AtencionDAO
++ obtenerEspecialista(idEspecialista:int): Especialista
++ listarCitasEspecialista(idEspecialista:int): List
++ obtenerCita(idCita:int): Cita
++ obtenerPerfilMenor(idCita:int): PerfilMenor
++ obtenerHistorial(idPerfilMenor:int): HistorialAtencion
++ obtenerAtenciones(historial:HistorialAtencion): List
++ verificarCamposAtencion(datos:Map): boolean
++ verificarObservacionCompleta(observacion:String): boolean
++ crearAtencion(datos:Map): Atencion
++ vincularAtencion(atencion:Atencion, cita:Cita, idEspecialista:int, perfilMenor:PerfilMenor): void
++ incorporarAtencionAlHistorial(historial:HistorialAtencion, atencion:Atencion): void
++ crearRegistroInasistencia(cita:Cita, observacion:String): Cita
++ vincularInasistencia(cita:Cita, perfilMenor:PerfilMenor): void
++ incorporarInasistenciaAlHistorial(historial:HistorialAtencion, cita:Cita): void
++ actualizarEstadoCita(cita:Cita, estado:String): void
++ registrarCambios(atencion:Atencion, cita:Cita, historial:HistorialAtencion): void
++ registrarCambios(cita:Cita): void
+«DAO» EspecialistaDAO
+- em: EntityManager
++ buscarPorId(idEspecialista:int): Especialista
+«DAO» CitaDAO
+- em: EntityManager
++ buscarPorEspecialista(idEspecialista:int): List
++ buscarPorId(idCita:int): Cita
++ actualizar(cita:Cita): Cita
+«DAO» PerfilMenorDAO
+- em: EntityManager
++ buscarPorCita(idCita:int): PerfilMenor
+«DAO» HistorialAtencionDAO
+- em: EntityManager
++ buscarPorPerfilMenor(idPerfilMenor:int): HistorialAtencion
++ actualizar(historial:HistorialAtencion): HistorialAtencion
+«DAO» AtencionDAO
+- em: EntityManager
++ buscarPorHistorial(idHistorial:int): List
++ insertar(atencion:Atencion): Atencion
+«Entity» Especialista
+- id: int
+«Entity» PerfilMenor
+- id: int
+«Entity» Cita
+- id: int
+- estado: String
+- observacionInasistencia: String
+- especialista: Especialista
+- perfilMenor: PerfilMenor
++ setEstado(estado:String): void
++ setObservacionInasistencia(observacion:String): void
+«Entity» HistorialAtencion
+- id: int
+- perfilMenor: PerfilMenor
++ agregarAtencion(atencion:Atencion): void
++ registrarInasistencia(cita:Cita): void
+«Entity» Atencion
+- id: int
+- observaciones: String
+- informacionRelevante: String
+- recomendaciones: String
+- diagnostico: String
+- indicacionesDeSeguimiento: String
+- notasAdicionales: String
+- cita: Cita
+- especialista: Especialista
++ Atencion(observaciones, informacionRelevante, recomendaciones, diagnostico, indicacionesDeSeguimiento, notasAdicionales)
++ setCita(cita:Cita): void
++ setEspecialista(especialista:Especialista): void
+usa
+usa
+usa
+usa
+usa
+usa
+consulta (ORM)
+persiste (ORM)
+consulta (ORM)
+consulta y actualiza (ORM)
+persiste (ORM)
+1 atiende 0..*
+1 recibe 0..*
+1 posee 1
+1 contiene 0..*
+1 genera 0..1
+1 registra 0..*

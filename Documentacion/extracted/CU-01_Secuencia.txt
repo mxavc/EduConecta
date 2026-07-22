@@ -1,0 +1,54 @@
+CU-01: Iniciar Sesión — Diagrama de Secuencia de Diseño
+Java Dynamic Web Project · JSP (vista) · Servlet (controlador) · Service · DAO · Entidad (ORM/JPA) · numeración idéntica al caso de uso
+Usuario
+«JSP» FormularioInicioSesion
+«Servlet» IniciarSesionControlador
+«Service» AutenticacionService
+«DAO» UsuarioDAO
+«Entity» Usuario
+«JSP» PaginaPrincipalFamiliar
+«JSP» PaginaPrincipalEspecialista
+alt
+10. [rol == "FAMILIAR"]
+10. [rol == "ESPECIALISTA"]
+alt
+7a. Contraseña incorrecta [contrasenaValida == false]
+[contrasenaValida == true]
+alt
+6a. Cuenta no registrada [usuario == null]
+[usuario != null]
+alt
+5a. Datos incompletos [camposCompletos == false]
+[camposCompletos == true]
+1. solicitarIngreso(): void
+ruteador(request:HttpServletRequest, response:HttpServletResponse): void
+2. mostrarFormularioInicioSesion(): void
+3. ingresarCredenciales(correo:String, contrasena:String): void
+4. confirmarIngreso(): void
+ruteador(request:HttpServletRequest, response:HttpServletResponse): void
+5. verificarCamposObligatorios(correo:String, contrasena:String): boolean
+return: camposCompletos:boolean
+5a.1. Identificar campos sin completar
+5a.2. mostrarMensajeError(mensaje:String): void
+5a.3. mostrarFormularioInicioSesion(datosIngresados:Map): void
+6. buscarCuentaPorCorreo(correo:String): Usuario
+buscarPorCorreo(correo:String): Usuario
+«query» SELECT u FROM Usuario u WHERE u.correoElectronico = :correo
+return: usuario:Usuario
+return: usuario:Usuario
+return: usuario:Usuario
+6a.1. Identificar cuenta inexistente
+6a.2. mostrarMensajeError(mensaje:String): void
+6a.3. mostrarFormularioInicioSesion(): void
+7. comprobarContrasena(usuario:Usuario, contrasena:String): boolean
+return: contrasenaValida:boolean
+7a.1. Identificar contraseña incorrecta
+7a.2. mostrarMensajeError(mensaje:String): void
+7a.3. mostrarFormularioInicioSesion(): void
+8. getRol(): String
+return: rol:String
+9. obtenerDatosSesion(usuario:Usuario): Usuario
+return: usuarioSesion:Usuario
+crearSesion(usuarioSesion:Usuario): void
+10. mostrarPaginaPrincipalFamiliar(usuarioSesion:Usuario): void
+10. mostrarPaginaPrincipalEspecialista(usuarioSesion:Usuario): void

@@ -1,0 +1,84 @@
+
+    <mxGraphModel dx="2943" dy="1529" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="G3tPadair1zfVoepO722-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=26;fontStyle=1;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:left;&#39;&gt;Diagrama de robustez — CU-01 Iniciar Sesión&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="1100" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-3" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=14;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Usuario&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="130" x="80" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-4" parent="1" style="shape=umlControl;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;IniciarSesion&lt;br/&gt;Controlador&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="210" x="430" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-5" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#eff6ff;swimlaneFillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Interfaces «boundary»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="700" width="1980" x="820" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-6" parent="G3tPadair1zfVoepO722-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Formulario de&lt;br/&gt;inicio de sesión&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="190" x="120" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-7" parent="G3tPadair1zfVoepO722-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Página principal&lt;br/&gt;del Familiar&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="190" x="760" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-8" parent="G3tPadair1zfVoepO722-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Página principal&lt;br/&gt;del Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="190" x="1400" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-9" parent="G3tPadair1zfVoepO722-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Interacciones con el formulario&lt;/b&gt;&lt;br/&gt;2. Mostrar formulario de inicio de sesión.&lt;br/&gt;5a.2. Mostrar «Complete los campos obligatorios».&lt;br/&gt;5a.3. Mantener el formulario con los datos ingresados.&lt;br/&gt;6a.2. Mostrar mensaje de credenciales incorrectas.&lt;br/&gt;6a.3. Mantener el formulario de inicio de sesión.&lt;br/&gt;7a.2. Mostrar mensaje de credenciales incorrectas.&lt;br/&gt;7a.3. Mantener el formulario de inicio de sesión.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="161" width="337" x="72" y="427" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-10" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#f0fdf4;swimlaneFillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Entidades del dominio «entity»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="489" width="1980" x="820" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-11" parent="G3tPadair1zfVoepO722-10" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Usuario&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="200" x="860" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-12" parent="G3tPadair1zfVoepO722-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre Usuario&lt;/b&gt;&lt;br/&gt;5. Verificar campos obligatorios.&lt;br/&gt;5a.1. Identificar campos sin completar.&lt;br/&gt;6. Buscar cuenta por correo.&lt;br/&gt;6a.1. Identificar cuenta inexistente.&lt;br/&gt;7. Comprobar contraseña.&lt;br/&gt;7a.1. Identificar contraseña incorrecta.&lt;br/&gt;8. Identificar rol.&lt;br/&gt;9. Obtener información del Usuario.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="174" width="261" x="68" y="234" as="geometry" />
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-13" edge="1" parent="1" source="G3tPadair1zfVoepO722-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#1f2937;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G3tPadair1zfVoepO722-4" value="&lt;div style=&#39;text-align:center;&#39;&gt;1. Solicitar ingresar al sistema&lt;br/&gt;3. Ingresar credenciales (correo, contraseña)&lt;br/&gt;4. Confirmar ingreso&lt;/div&gt;">
+          <mxGeometry relative="1" y="-18" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-14" edge="1" parent="1" source="G3tPadair1zfVoepO722-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.22;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G3tPadair1zfVoepO722-6" value="&lt;div style=&#39;text-align:center;&#39;&gt;2, 5a.2-5a.3, 6a.2-6a.3, 7a.2-7a.3&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="635" />
+              <mxPoint x="710" y="455" />
+              <mxPoint x="1035" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-15" edge="1" parent="1" source="G3tPadair1zfVoepO722-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.42;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G3tPadair1zfVoepO722-7" value="&lt;div style=&#39;text-align:center;&#39;&gt;10. Mostrar página principal&lt;br/&gt;{rol=familiar}&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="735" y="675" />
+              <mxPoint x="735" y="330" />
+              <mxPoint x="1580" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-16" edge="1" parent="1" source="G3tPadair1zfVoepO722-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.62;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G3tPadair1zfVoepO722-8" value="&lt;div style=&#39;text-align:center;&#39;&gt;10. Mostrar página principal&lt;br/&gt;{rol=especialista}&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="715" />
+              <mxPoint x="760" y="230" />
+              <mxPoint x="2220" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G3tPadair1zfVoepO722-17" edge="1" parent="1" source="G3tPadair1zfVoepO722-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.82;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="G3tPadair1zfVoepO722-11" value="&lt;div style=&#39;text-align:center;&#39;&gt;5-9. Validar credenciales, buscar cuenta,&lt;br/&gt;comprobar contraseña, identificar rol&lt;br/&gt;y obtener información del Usuario&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="735" y="770" />
+              <mxPoint x="735" y="1110" />
+              <mxPoint x="1780" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

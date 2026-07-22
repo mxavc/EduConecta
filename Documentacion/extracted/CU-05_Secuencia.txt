@@ -1,0 +1,128 @@
+CU-05: Atender Cita — Diagrama de Secuencia de Diseño
+Java Dynamic Web Project · JSP (vista) · Servlet (controlador) · Service · DAO · Entidad (ORM/JPA) · numeración idéntica al caso de uso
+Especialista
+«JSP» PaginaPrincipalEspecialista
+«JSP» SeccionCitasAsignadas
+«JSP» DetalleCita
+«JSP» HistorialAtencionMenor
+«JSP» FormularioRegistroAtencion
+«JSP» FormularioRegistroInasistencia
+«Servlet» AtenderCitaControlador
+«Service» AtencionService
+«DAO» EspecialistaDAO
+«DAO» CitaDAO
+«DAO» PerfilMenorDAO
+«DAO» HistorialAtencionDAO
+«DAO» AtencionDAO
+«Entity» Cita
+«Entity» HistorialAtencion
+«Entity» Atencion
+alt
+19a. Datos incompletos [datosValidos == false]
+[datosValidos == true]
+alt
+18a. Cancelar registro de atención [confirmacion == false]
+[confirmacion == true]
+alt
+7a. Registrar inasistencia [cita == no asistida]
+[cita == asistida] Registrar atención
+1. solicitarIngreso(): void
+ruteador(request:HttpServletRequest, response:HttpServletResponse): void
+2. obtenerEspecialista(idEspecialista:int): Especialista
+buscarPorId(idEspecialista:int): Especialista
+return: especialista:Especialista
+return: especialista:Especialista
+3. mostrarPaginaPrincipalEspecialista(especialista:Especialista): void
+4. consultarCitasAsignadas(): void
+5. listarCitasEspecialista(idEspecialista:int): List
+buscarPorEspecialista(idEspecialista:int): List
+«query» SELECT c FROM Cita c WHERE c.especialista.id = :idEspecialista
+return: citas:List
+return: citas:List
+return: citas:List
+6. mostrarCitasAsignadas(citas:List ): void
+7a.1. seleccionarCita(idCita:int): void
+7a.2. obtenerCita(idCita:int): Cita
+return: cita:Cita
+7a.3. obtenerPerfilMenor(idCita:int): PerfilMenor
+return: perfilMenor:PerfilMenor
+7a.4. mostrarDetalleCita(cita:Cita, perfilMenor:PerfilMenor): void
+7a.5. solicitarRegistroInasistencia(idCita:int): void
+7a.6. mostrarFormularioRegistroInasistencia(cita:Cita): void
+7a.7. ingresarObservacionYConfirmar(idCita:int, observacion:String): void
+7a.8. verificarObservacionCompleta(observacion:String): boolean
+return: observacionValida:boolean
+7a.9. crearRegistroInasistencia(cita:Cita, observacion:String): Cita
+setObservacionInasistencia(observacion:String): void
+return: cita:Cita
+7a.10. vincularInasistencia(cita:Cita, perfilMenor:PerfilMenor): void
+7a.11. incorporarInasistenciaAlHistorial(historial:HistorialAtencion, cita:Cita): void
+registrarInasistencia(cita:Cita): void
+7a.12. actualizarEstadoCita(cita:Cita, estado:String): void
+setEstado("NO_ASISTIDA"): void
+7a.13. registrarCambios(cita:Cita): void
+actualizar(cita:Cita): Cita
+«merge» em.merge(cita)
+7a.14. listarCitasEspecialista(idEspecialista:int): List
+return: citas:List
+7a.15. mostrarMensajeExito(mensaje:String): void
+7a.16. mostrarCitasAsignadas(citas:List ): void
+7. seleccionarCita(idCita:int): void
+8. obtenerCita(idCita:int): Cita
+buscarPorId(idCita:int): Cita
+return: cita:Cita
+return: cita:Cita
+9. obtenerPerfilMenor(idCita:int): PerfilMenor
+buscarPorCita(idCita:int): PerfilMenor
+return: perfilMenor:PerfilMenor
+return: perfilMenor:PerfilMenor
+10. mostrarDetalleCita(cita:Cita, perfilMenor:PerfilMenor): void
+11. consultarHistorialMenor(idPerfilMenor:int): void
+12. obtenerHistorial(idPerfilMenor:int): HistorialAtencion
+buscarPorPerfilMenor(idPerfilMenor:int): HistorialAtencion
+«query» SELECT h FROM HistorialAtencion h WHERE h.perfilMenor.id = :idPerfilMenor
+return: historial:HistorialAtencion
+return: historial:HistorialAtencion
+return: historial:HistorialAtencion
+13. obtenerAtenciones(historial:HistorialAtencion): List
+buscarPorHistorial(idHistorial:int): List
+return: atenciones:List
+return: atenciones:List
+14. mostrarHistorialMenor(historial:HistorialAtencion, atenciones:List ): void
+15. solicitarRegistroAtencion(idCita:int): void
+16. mostrarFormularioRegistroAtencion(cita:Cita): void
+17. ingresarInformacionAtencion(observaciones:String, informacionRelevante:String, recomendaciones:String, diagnostico:String, indicacionesDeSeguimiento:String, notasAdicionales:String): void
+18a.1. cancelarRegistroAtencion(): void
+18a.2. descartarDatosNoConfirmados(): void
+18a.3. obtenerCita(idCita:int): Cita
+return: cita:Cita
+18a.4. obtenerPerfilMenor(idCita:int): PerfilMenor
+return: perfilMenor:PerfilMenor
+18a.5. mostrarDetalleCita(cita:Cita, perfilMenor:PerfilMenor): void
+18. confirmarRegistro(): void
+19. verificarCamposAtencion(datos:Map): boolean
+return: datosValidos:boolean
+19a.1. Identificar campos obligatorios sin completar
+19a.2. mostrarMensajeError(mensaje:String): void
+19a.3. mostrarFormularioRegistroAtencion(datosIngresados:Map): void
+20. crearAtencion(datos:Map): Atencion
+«create» Atencion(observaciones, informacionRelevante, recomendaciones, diagnostico, indicacionesDeSeguimiento, notasAdicionales)
+return: atencion:Atencion
+return: atencion:Atencion
+21. vincularAtencion(atencion:Atencion, cita:Cita, idEspecialista:int, perfilMenor:PerfilMenor): void
+setCita(cita:Cita): void
+setEspecialista(especialista:Especialista): void
+22. incorporarAtencionAlHistorial(historial:HistorialAtencion, atencion:Atencion): void
+agregarAtencion(atencion:Atencion): void
+23. actualizarEstadoCita(cita:Cita, estado:String): void
+setEstado("ATENDIDA"): void
+24. registrarCambios(atencion:Atencion, cita:Cita, historial:HistorialAtencion): void
+insertar(atencion:Atencion): Atencion
+«persist» em.persist(atencion)
+actualizar(historial:HistorialAtencion): HistorialAtencion
+actualizar(cita:Cita): Cita
+«merge» em.merge(cita)
+25. listarCitasEspecialista(idEspecialista:int): List
+return: citas:List
+26. mostrarMensajeExito(mensaje:String): void
+27. mostrarCitasAsignadas(citas:List ): void

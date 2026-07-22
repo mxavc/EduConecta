@@ -1,0 +1,23 @@
+Diagrama de robustez — CU-04 Agendar Cita
+Interfaces «boundary»
+Página principal del Familiar
+Lista de Especialistas
+Información del Especialista
+Formulario de agendamiento de cita
+Sección Mis citas
+Entidades del dominio «entity»
+Especialista
+Disponibilidad
+PerfilMenor
+Cita
+1. Ingresar 3. Consultar especialistas 6. Seleccionar especialista (especialista) 10. Solicitar agendamiento 13. Registrar cita (menor, fecha, hora) 13a.1. Cancelar agendamiento
+2. Mostrar página principal del Familiar
+5. Mostrar lista de especialistas (especialistas)
+9. Mostrar información y horarios del especialista (especialista, horarios) 13a.2. Mostrar información del especialista
+12. Mostrar formulario de agendamiento (perfiles, horarios) 14a.2. Mostrar mensaje: datos incompletos o fecha no válida 14b.2. Mostrar mensaje: horario no disponible 14b.3. Actualizar horarios (horarios)
+17. Mostrar mensaje: «Cita agendada con éxito» 18. Mostrar cita registrada (citas)
+4. Obtener especialistas disponibles 7. Obtener información del especialista (especialista) 8. Obtener horarios disponibles (especialista) 14. Verificar disponibilidad (fecha, hora) 15. Reservar disponibilidad
+11. Obtener perfiles del familiar (familiar)
+16. Registrar cita (familiar, menor, especialista, disponibilidad)
+Familiar
+AgendarCita Controlador

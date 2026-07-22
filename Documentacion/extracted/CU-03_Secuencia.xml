@@ -1,0 +1,508 @@
+
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=24;fontStyle=1;fontFamily=Helvetica;" value="CU-03: Registrar Perfil de Menor — Diagrama de Secuencia de Diseño" vertex="1">
+          <mxGeometry height="34" width="2620" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c_2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#555555;fontFamily=Helvetica;" value="Java Dynamic Web Project · JSP (vista) · Servlet (controlador) · Service · DAO · Entidad (ORM/JPA) · numeración idéntica al caso de uso" vertex="1">
+          <mxGeometry height="22" width="2620" x="40" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="c_3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;" value="Familiar" vertex="1">
+          <mxGeometry height="55" width="30" x="95" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="c_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;PaginaPrincipalFamiliar" vertex="1">
+          <mxGeometry height="60" width="190" x="245" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;SeccionPerfilesMenores" vertex="1">
+          <mxGeometry height="60" width="190" x="475" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;FormularioRegistroMenor" vertex="1">
+          <mxGeometry height="60" width="190" x="705" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=10;fontStyle=1;" value="«Servlet»&lt;br&gt;RegistrarPerfilMenorControlador" vertex="1">
+          <mxGeometry height="60" width="190" x="935" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=10;fontStyle=1;" value="«Service»&lt;br&gt;PerfilMenorService" vertex="1">
+          <mxGeometry height="60" width="190" x="1165" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;FamiliarDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="1395" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;PerfilMenorDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="1625" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;HistorialAtencionDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="1855" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;fontStyle=1;" value="«Entity»&lt;br&gt;PerfilMenor" vertex="1">
+          <mxGeometry height="60" width="190" x="2085" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;fontStyle=1;" value="«Entity»&lt;br&gt;HistorialAtencion" vertex="1">
+          <mxGeometry height="60" width="190" x="2315" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_67" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="162" as="sourcePoint" />
+            <mxPoint x="110" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_68" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="162" as="sourcePoint" />
+            <mxPoint x="340" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_69" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="26" width="14" x="333" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="e_70" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="162" as="sourcePoint" />
+            <mxPoint x="570" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_71" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1762" width="14" x="563" y="777" as="geometry" />
+        </mxCell>
+        <mxCell id="e_72" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="162" as="sourcePoint" />
+            <mxPoint x="800" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_73" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="970" width="14" x="793" y="857" as="geometry" />
+        </mxCell>
+        <mxCell id="e_74" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="162" as="sourcePoint" />
+            <mxPoint x="1030" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_75" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="2336" width="14" x="1023" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="e_76" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="162" as="sourcePoint" />
+            <mxPoint x="1260" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_77" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="2162" width="14" x="1253" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="e_78" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1490" y="162" as="sourcePoint" />
+            <mxPoint x="1490" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_79" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="64" width="14" x="1483" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="e_80" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="162" as="sourcePoint" />
+            <mxPoint x="1720" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_81" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1802" width="14" x="1713" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="e_82" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="162" as="sourcePoint" />
+            <mxPoint x="1950" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_83" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="64" width="14" x="1943" y="2235" as="geometry" />
+        </mxCell>
+        <mxCell id="e_84" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2180" y="162" as="sourcePoint" />
+            <mxPoint x="2180" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_85" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1762" width="14" x="2173" y="617" as="geometry" />
+        </mxCell>
+        <mxCell id="e_86" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="162" as="sourcePoint" />
+            <mxPoint x="2410" y="2639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_87" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="304" width="14" x="2403" y="1995" as="geometry" />
+        </mxCell>
+        <mxCell id="c_88" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="902" width="2540" x="18" y="1673" as="geometry" />
+        </mxCell>
+        <mxCell id="c_89" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="12a. Menor registrado previamente [menorRegistrado == true]" vertex="1">
+          <mxGeometry height="24" width="700" x="118" y="1673" as="geometry" />
+        </mxCell>
+        <mxCell id="c_90" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[menorRegistrado == false]" vertex="1">
+          <mxGeometry height="24" width="700" x="118" y="1829" as="geometry" />
+        </mxCell>
+        <mxCell id="e_91" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="18" y="1843" as="sourcePoint" />
+            <mxPoint x="2558" y="1843" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_92" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="1266" width="2512" x="32" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="c_93" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="11a. Datos incompletos o no válidos [datosValidos == false]" vertex="1">
+          <mxGeometry height="24" width="700" x="132" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="c_94" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[datosValidos == true]" vertex="1">
+          <mxGeometry height="24" width="700" x="132" y="1481" as="geometry" />
+        </mxCell>
+        <mxCell id="e_95" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="32" y="1495" as="sourcePoint" />
+            <mxPoint x="2544" y="1495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_96" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="1684" width="2484" x="46" y="923" as="geometry" />
+        </mxCell>
+        <mxCell id="c_97" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="10a. Cancelar registro [confirmacion == false]" vertex="1">
+          <mxGeometry height="24" width="700" x="146" y="923" as="geometry" />
+        </mxCell>
+        <mxCell id="c_98" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[confirmacion == true]" vertex="1">
+          <mxGeometry height="24" width="700" x="146" y="1173" as="geometry" />
+        </mxCell>
+        <mxCell id="e_99" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="46" y="1187" as="sourcePoint" />
+            <mxPoint x="2530" y="1187" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_14" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="1. solicitarIngreso(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="215" as="sourcePoint" />
+            <mxPoint x="1030" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_15" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;rounded=0;verticalAlign=middle;align=left;fontSize=9;labelBackgroundColor=#FFFFFF;" value="ruteador(request:HttpServletRequest, response:HttpServletResponse): void">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="255" />
+              <mxPoint x="1130" y="281" />
+            </Array>
+            <mxPoint x="1035" y="255" as="sourcePoint" />
+            <mxPoint x="1035" y="281" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_16" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="2. obtenerFamiliar(idFamiliar:int): Familiar">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="309" as="sourcePoint" />
+            <mxPoint x="1260" y="309" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_17" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorId(idFamiliar:int): Familiar">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="349" as="sourcePoint" />
+            <mxPoint x="1490" y="349" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_18" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: familiar:Familiar">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1490" y="389" as="sourcePoint" />
+            <mxPoint x="1260" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_19" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: familiar:Familiar">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="429" as="sourcePoint" />
+            <mxPoint x="1030" y="429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_20" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="3. mostrarPaginaPrincipalFamiliar(familiar:Familiar): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="469" as="sourcePoint" />
+            <mxPoint x="340" y="469" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_21" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="4. consultarPerfilesMenores(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="509" as="sourcePoint" />
+            <mxPoint x="1030" y="509" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_22" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="5. buscarPerfilesPorFamiliar(idFamiliar:int): List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="549" as="sourcePoint" />
+            <mxPoint x="1260" y="549" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_23" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorFamiliar(idFamiliar:int): List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="589" as="sourcePoint" />
+            <mxPoint x="1720" y="589" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_24" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«query» SELECT p FROM PerfilMenor p WHERE p.familiar.id = :idFamiliar">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="629" as="sourcePoint" />
+            <mxPoint x="2180" y="629" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_25" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfiles:List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2180" y="669" as="sourcePoint" />
+            <mxPoint x="1720" y="669" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_26" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfiles:List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="709" as="sourcePoint" />
+            <mxPoint x="1260" y="709" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_27" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfiles:List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="749" as="sourcePoint" />
+            <mxPoint x="1030" y="749" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_28" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="6. mostrarPerfilesMenores(perfiles:List&amp;lt;PerfilMenor&amp;gt;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="789" as="sourcePoint" />
+            <mxPoint x="570" y="789" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_29" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7. solicitarRegistroPerfilMenor(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="829" as="sourcePoint" />
+            <mxPoint x="1030" y="829" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_30" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="8. mostrarFormularioRegistroMenor(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="869" as="sourcePoint" />
+            <mxPoint x="800" y="869" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_31" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="9. ingresarInformacionMenor(nombres:String, apellidos:String, cedula:String, edad:int, anioEscolar:String, provincia:String, ciudad:String, diagnosticoOCondicion:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="909" as="sourcePoint" />
+            <mxPoint x="1030" y="909" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_32" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10a.1. cancelarRegistro(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="985" as="sourcePoint" />
+            <mxPoint x="1030" y="985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_33" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;rounded=0;verticalAlign=middle;align=left;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10a.2. descartarDatosNoConfirmados(): void">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="1025" />
+              <mxPoint x="1130" y="1051" />
+            </Array>
+            <mxPoint x="1035" y="1025" as="sourcePoint" />
+            <mxPoint x="1035" y="1051" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_34" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10a.3. buscarPerfilesPorFamiliar(idFamiliar:int): List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1079" as="sourcePoint" />
+            <mxPoint x="1260" y="1079" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_35" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfiles:List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="1119" as="sourcePoint" />
+            <mxPoint x="1030" y="1119" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_36" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10a.4. mostrarPerfilesMenores(perfiles:List&amp;lt;PerfilMenor&amp;gt;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1159" as="sourcePoint" />
+            <mxPoint x="570" y="1159" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_37" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10. confirmarRegistro(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1231" as="sourcePoint" />
+            <mxPoint x="1030" y="1231" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_38" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="11. verificarCamposYValidez(datos:Map): boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1271" as="sourcePoint" />
+            <mxPoint x="1260" y="1271" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_39" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: datosValidos:boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="1311" as="sourcePoint" />
+            <mxPoint x="1030" y="1311" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_40" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9C4;strokeColor=#D6B656;align=left;fontSize=9;fontStyle=2;" value="11a.1. Identificar campos incompletos o información no válida" vertex="1">
+          <mxGeometry height="30" width="340" x="70" y="1379" as="geometry" />
+        </mxCell>
+        <mxCell id="e_41" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="11a.2. mostrarMensajeError(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1427" as="sourcePoint" />
+            <mxPoint x="800" y="1427" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_42" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="11a.3. mostrarFormularioRegistroMenor(datosIngresados:Map): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1467" as="sourcePoint" />
+            <mxPoint x="800" y="1467" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_43" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="12. verificarMenorNoRegistrado(idFamiliar:int, cedula:String): boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1539" as="sourcePoint" />
+            <mxPoint x="1260" y="1539" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_44" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="existePorFamiliarYCedula(idFamiliar:int, cedula:String): boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="1579" as="sourcePoint" />
+            <mxPoint x="1720" y="1579" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_45" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: existe:boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1619" as="sourcePoint" />
+            <mxPoint x="1260" y="1619" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_46" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: menorRegistrado:boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="1659" as="sourcePoint" />
+            <mxPoint x="1030" y="1659" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_47" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9C4;strokeColor=#D6B656;align=left;fontSize=9;fontStyle=2;" value="12a.1. Identificar menor ya registrado — 12a.4. No se crea un nuevo Perfil de Menor" vertex="1">
+          <mxGeometry height="30" width="340" x="70" y="1727" as="geometry" />
+        </mxCell>
+        <mxCell id="e_48" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="12a.2. mostrarMensajeError(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1775" as="sourcePoint" />
+            <mxPoint x="800" y="1775" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_49" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="12a.3. mostrarFormularioRegistroMenor(datosIngresados:Map): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1815" as="sourcePoint" />
+            <mxPoint x="800" y="1815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_50" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="13. crearPerfilMenor(datos:Map): PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="1887" as="sourcePoint" />
+            <mxPoint x="1260" y="1887" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_51" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«create» PerfilMenor(nombres, apellidos, cedula, edad, anioEscolar, provincia, ciudad, diagnosticoOCondicion)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="1927" as="sourcePoint" />
+            <mxPoint x="2180" y="1927" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_52" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfil:PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2180" y="1967" as="sourcePoint" />
+            <mxPoint x="1260" y="1967" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_53" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«create» HistorialAtencion()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="2007" as="sourcePoint" />
+            <mxPoint x="2410" y="2007" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_54" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: historial:HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="2047" as="sourcePoint" />
+            <mxPoint x="1260" y="2047" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_55" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="setHistorialAtencion(historial:HistorialAtencion): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="2087" as="sourcePoint" />
+            <mxPoint x="2180" y="2087" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_56" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfil:PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="2127" as="sourcePoint" />
+            <mxPoint x="1030" y="2127" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_57" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="14. vincularConFamiliar(perfil:PerfilMenor, familiar:Familiar): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="2167" as="sourcePoint" />
+            <mxPoint x="1260" y="2167" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_58" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="setFamiliar(familiar:Familiar): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="2207" as="sourcePoint" />
+            <mxPoint x="2180" y="2207" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_59" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="insertar(historial:HistorialAtencion): HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="2247" as="sourcePoint" />
+            <mxPoint x="1950" y="2247" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_60" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«persist» em.persist(historial)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2287" as="sourcePoint" />
+            <mxPoint x="2410" y="2287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_61" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="insertar(perfil:PerfilMenor): PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="2327" as="sourcePoint" />
+            <mxPoint x="1720" y="2327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_62" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«persist» em.persist(perfil)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="2367" as="sourcePoint" />
+            <mxPoint x="2180" y="2367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_63" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="15. buscarPerfilesPorFamiliar(idFamiliar:int): List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="2407" as="sourcePoint" />
+            <mxPoint x="1260" y="2407" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_64" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfiles:List&amp;lt;PerfilMenor&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="2447" as="sourcePoint" />
+            <mxPoint x="1030" y="2447" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_65" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="16. mostrarMensajeExito(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="2487" as="sourcePoint" />
+            <mxPoint x="570" y="2487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_66" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="17. mostrarPerfilesMenores(perfiles:List&amp;lt;PerfilMenor&amp;gt;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="2527" as="sourcePoint" />
+            <mxPoint x="570" y="2527" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

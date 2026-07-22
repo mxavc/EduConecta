@@ -1,0 +1,209 @@
+
+    <mxGraphModel dx="5150" dy="3875" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=26;fontStyle=1;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:left;&#39;&gt;Diagrama de robustez — CU-05 Atender Cita&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="1250" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-3" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=14;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="140" x="70" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-4" parent="1" style="shape=umlControl;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;AtenderCita&lt;br/&gt;Controlador&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="230" x="440" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-5" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#eff6ff;swimlaneFillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Interfaces «boundary»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="1171" width="2920" x="880" y="-1" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-6" parent="hTcTHGCFPZAmDPpBaFJk-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Página principal&lt;br/&gt;del Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="185" x="100" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-7" parent="hTcTHGCFPZAmDPpBaFJk-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Sección Citas&lt;br/&gt;asignadas&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="185" x="1011" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-8" parent="hTcTHGCFPZAmDPpBaFJk-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Detalle de&lt;br/&gt;la cita&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="185" x="2449" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-9" parent="hTcTHGCFPZAmDPpBaFJk-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Historial de atención&lt;br/&gt;del menor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="200" x="100" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-10" parent="hTcTHGCFPZAmDPpBaFJk-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Formulario de registro&lt;br/&gt;de atención&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="210" x="670" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-11" parent="hTcTHGCFPZAmDPpBaFJk-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Formulario de registro&lt;br/&gt;de inasistencia&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="220" x="1240" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-12" parent="hTcTHGCFPZAmDPpBaFJk-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Página principal&lt;/b&gt;&lt;br/&gt;3. Mostrar página principal del Especialista.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="340" x="42" y="293" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-13" parent="hTcTHGCFPZAmDPpBaFJk-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Sección Citas asignadas&lt;/b&gt;&lt;br/&gt;6. Mostrar sección Citas asignadas.&lt;br/&gt;26. Mostrar «La atención ha sido registrada correctamente».&lt;br/&gt;27. Mostrar sección con información actualizada.&lt;br/&gt;7a.15. Mostrar «La inasistencia ha sido registrada correctamente».&lt;br/&gt;7a.16. Mostrar sección con información actualizada.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="406" x="510" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-14" parent="hTcTHGCFPZAmDPpBaFJk-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Detalle de la cita&lt;/b&gt;&lt;br/&gt;10. Mostrar detalles de la cita e información del menor.&lt;br/&gt;7a.4. Mostrar detalles de la cita.&lt;br/&gt;18a.5. Mostrar detalles de la cita y la información del menor.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="381" x="1324" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-15" parent="hTcTHGCFPZAmDPpBaFJk-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Historial del menor&lt;/b&gt;&lt;br/&gt;14. Mostrar antecedentes y registros de atenciones anteriores.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="339" x="35" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-16" parent="hTcTHGCFPZAmDPpBaFJk-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Formulario de atención&lt;/b&gt;&lt;br/&gt;16. Mostrar formulario de registro de atención.&lt;br/&gt;19a.2. Mostrar «Complete los campos obligatorios».&lt;br/&gt;19a.3. Mantener formulario con información ingresada.&lt;br/&gt;18a.2. Descartar información no confirmada.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="291" x="788" y="788" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-17" parent="hTcTHGCFPZAmDPpBaFJk-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Formulario de inasistencia&lt;/b&gt;&lt;br/&gt;7a.6. Mostrar formulario de registro de inasistencia.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="307" x="1059" y="398" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-18" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#f0fdf4;swimlaneFillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Entidades del dominio «entity»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="900" width="2920" x="880" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-19" parent="hTcTHGCFPZAmDPpBaFJk-18" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="170" x="269" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-20" parent="hTcTHGCFPZAmDPpBaFJk-18" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Cita&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="170" x="779" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-21" parent="hTcTHGCFPZAmDPpBaFJk-18" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;PerfilMenor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="180" x="1110" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-22" parent="hTcTHGCFPZAmDPpBaFJk-18" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;HistorialAtencion&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="200" x="1620" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-23" parent="hTcTHGCFPZAmDPpBaFJk-18" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Atencion&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="180" x="2130" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-24" parent="hTcTHGCFPZAmDPpBaFJk-18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre Especialista&lt;/b&gt;&lt;br/&gt;2. Obtener información del especialista.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="224" x="28" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-25" parent="hTcTHGCFPZAmDPpBaFJk-18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre Cita&lt;/b&gt;&lt;br/&gt;5. Obtener citas vinculadas con el Especialista.&lt;br/&gt;8. Obtener detalles de la cita seleccionada.&lt;br/&gt;23. Actualizar estado a ATENDIDA.&lt;br/&gt;24. Registrar cambios realizados.&lt;br/&gt;25. Obtener lista actualizada de citas.&lt;br/&gt;7a.2. Obtener detalles de la cita seleccionada.&lt;br/&gt;7a.9. Crear registro de inasistencia.&lt;br/&gt;7a.10. Vincular inasistencia con cita y menor.&lt;br/&gt;7a.12. Actualizar estado a NO ASISTIDA.&lt;br/&gt;7a.13. Registrar cambios realizados.&lt;br/&gt;7a.14. Obtener lista actualizada de citas.&lt;br/&gt;18a.3. Obtener detalles de la cita.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="293" x="421" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-26" parent="hTcTHGCFPZAmDPpBaFJk-18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre PerfilMenor&lt;/b&gt;&lt;br/&gt;9. Obtener información del Perfil del Menor.&lt;br/&gt;7a.3. Obtener información del Perfil del Menor.&lt;br/&gt;18a.4. Obtener información del Perfil del Menor.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="276" x="1209" y="304" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-27" parent="hTcTHGCFPZAmDPpBaFJk-18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre HistorialAtencion&lt;/b&gt;&lt;br/&gt;12. Obtener historial vinculado con el Perfil del Menor.&lt;br/&gt;22. Incorporar la atención al historial.&lt;br/&gt;7a.11. Incorporar la inasistencia al historial.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="294" x="1718" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-28" parent="hTcTHGCFPZAmDPpBaFJk-18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre Atencion&lt;/b&gt;&lt;br/&gt;13. Obtener registros de atenciones anteriores.&lt;br/&gt;19. Verificar campos completos e información válida.&lt;br/&gt;19a.1. Identificar campos obligatorios sin completar.&lt;br/&gt;20. Crear registro de la atención.&lt;br/&gt;21. Vincular la atención con cita, especialista y menor.&lt;br/&gt;24. Registrar cambios realizados.&lt;br/&gt;7a.8. Verificar información obligatoria completa.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="331" x="2237" y="287" as="geometry" />
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-29" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#1f2937;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-4" value="&lt;div style=&#39;text-align:center;&#39;&gt;1. Solicitar ingresar a la Página principal del Especialista&lt;br/&gt;4. Consultar citas asignadas&lt;br/&gt;7. Seleccionar una cita&lt;br/&gt;11. Consultar historial del menor&lt;br/&gt;15. Solicitar registrar la atención&lt;br/&gt;17. Ingresar información de la atención&lt;br/&gt;18. Confirmar registro&lt;br/&gt;7a.1. Seleccionar cita no asistida&lt;br/&gt;7a.5. Solicitar registrar la inasistencia&lt;br/&gt;7a.7. Ingresar observación y confirmar registro&lt;br/&gt;18a.1. Cancelar registro de la atención&lt;/div&gt;">
+          <mxGeometry relative="1" y="-18" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-30" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.12;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-6" value="&lt;div style=&#39;text-align:center;&#39;&gt;3. Mostrar página principal&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="955" />
+              <mxPoint x="760" y="955" />
+              <mxPoint x="760" y="191.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-31" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.012;entryY=0.535;entryDx=0;entryDy=0;entryPerimeter=0;" target="hTcTHGCFPZAmDPpBaFJk-7" value="&lt;div style=&#39;text-align:center;&#39;&gt;6, 26-27, 7a.15-7a.16&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="985" />
+              <mxPoint x="790" y="985" />
+              <mxPoint x="790" y="104.1" />
+              <mxPoint x="1511.77" y="104.1" />
+              <mxPoint x="1511.77" y="191.29" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-32" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.38;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-8" value="&lt;div style=&#39;text-align:center;&#39;&gt;10, 7a.4, 18a.5&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1015" />
+              <mxPoint x="820" y="1015" />
+              <mxPoint x="820" y="79.95" />
+              <mxPoint x="2210" y="79.95" />
+              <mxPoint x="2210" y="143.53" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-33" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.51;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-9" value="&lt;div style=&#39;text-align:center;&#39;&gt;14. Mostrar historial&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="1045" />
+              <mxPoint x="850" y="770" />
+              <mxPoint x="1080" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-34" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.64;exitDx=0;exitDy=0;" target="hTcTHGCFPZAmDPpBaFJk-10" value="&lt;div style=&#39;text-align:center;&#39;&gt;16, 19a.2-19a.3, 18a.2&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1075.04" />
+              <mxPoint x="891.2" y="1075.04" />
+              <mxPoint x="891.2" y="1005.76" />
+              <mxPoint x="1655.04" y="1005.76" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-35" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.77;exitDx=0;exitDy=0;" target="hTcTHGCFPZAmDPpBaFJk-11" value="&lt;div style=&#39;text-align:center;&#39;&gt;7a.6. Mostrar formulario de inasistencia&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1105" />
+              <mxPoint x="910" y="1105" />
+              <mxPoint x="910" y="506.53" />
+              <mxPoint x="2220" y="506.53" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-36" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.82;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-19" value="&lt;div style=&#39;text-align:center;&#39;&gt;2. Obtener información del especialista&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="1140" />
+              <mxPoint x="760" y="1455" />
+              <mxPoint x="1055" y="1455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-37" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.88;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-20" value="&lt;div style=&#39;text-align:center;&#39;&gt;5, 8, 23-25, 7a.2, 7a.9-7a.14, 18a.3&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1170.06" />
+              <mxPoint x="790" y="1170.06" />
+              <mxPoint x="790" y="1575.71" />
+              <mxPoint x="1565.06" y="1575.71" />
+              <mxPoint x="1565.06" y="1463.94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-38" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.94;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-21" value="&lt;div style=&#39;text-align:center;&#39;&gt;9, 7a.3, 18a.4&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1200" />
+              <mxPoint x="820" y="1200" />
+              <mxPoint x="820" y="1831.6" />
+              <mxPoint x="2075" y="1831.6" />
+              <mxPoint x="2075" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-39" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.72;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-22" value="&lt;div style=&#39;text-align:center;&#39;&gt;12, 22, 7a.11&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="605.67" y="1225" />
+              <mxPoint x="690.11" y="1225" />
+              <mxPoint x="690.11" y="1949.67" />
+              <mxPoint x="2585" y="1949.67" />
+              <mxPoint x="2585" y="1460.11" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hTcTHGCFPZAmDPpBaFJk-40" edge="1" parent="1" source="hTcTHGCFPZAmDPpBaFJk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=34;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.55;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hTcTHGCFPZAmDPpBaFJk-23" value="&lt;div style=&#39;text-align:center;&#39;&gt;13, 19-21, 24, 7a.8&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="566.67" y="1250" />
+              <mxPoint x="650" y="1250" />
+              <mxPoint x="650" y="2103.67" />
+              <mxPoint x="3095" y="2103.67" />
+              <mxPoint x="3095" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

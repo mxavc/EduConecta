@@ -1,0 +1,64 @@
+CU-03: Registrar Perfil de Menor — Diagrama de Clases de Diseño
+Métodos tomados del Diagrama de Secuencia de Diseño · sin vistas JSP · capas: Servlet (rojo) · Service (azul) · DAO (morado) · Entidad (amarillo)
+«Servlet» RegistrarPerfilMenorControlador
+- perfilMenorService: PerfilMenorService
++ doGet(request:HttpServletRequest, response:HttpServletResponse): void
++ doPost(request:HttpServletRequest, response:HttpServletResponse): void
+- ruteador(request:HttpServletRequest, response:HttpServletResponse): void
++ solicitarIngreso(): void
++ consultarPerfilesMenores(): void
++ solicitarRegistroPerfilMenor(): void
++ ingresarInformacionMenor(datos:Map): void
++ confirmarRegistro(): void
++ cancelarRegistro(): void
+- descartarDatosNoConfirmados(): void
+«Service» PerfilMenorService
+- familiarDAO: FamiliarDAO
+- perfilMenorDAO: PerfilMenorDAO
+- historialAtencionDAO: HistorialAtencionDAO
++ obtenerFamiliar(idFamiliar:int): Familiar
++ buscarPerfilesPorFamiliar(idFamiliar:int): List
++ verificarCamposYValidez(datos:Map): boolean
++ verificarMenorNoRegistrado(idFamiliar:int, cedula:String): boolean
++ crearPerfilMenor(datos:Map): PerfilMenor
++ vincularConFamiliar(perfil:PerfilMenor, familiar:Familiar): void
+«DAO» FamiliarDAO
+- em: EntityManager
++ buscarPorId(idFamiliar:int): Familiar
+«DAO» PerfilMenorDAO
+- em: EntityManager
++ buscarPorFamiliar(idFamiliar:int): List
++ existePorFamiliarYCedula(idFamiliar:int, cedula:String): boolean
++ insertar(perfil:PerfilMenor): PerfilMenor
+«DAO» HistorialAtencionDAO
+- em: EntityManager
++ insertar(historial:HistorialAtencion): HistorialAtencion
+«Entity» Familiar
+- id: int
+«Entity» PerfilMenor
+- id: int
+- nombresCompletos: String
+- apellidosCompletos: String
+- cedula: String
+- edad: int
+- anioEscolar: String
+- provincia: String
+- ciudad: String
+- diagnosticoOCondicion: String
+- familiar: Familiar
+- historialAtencion: HistorialAtencion
++ PerfilMenor(nombres, apellidos, cedula, edad, anioEscolar, provincia, ciudad, diagnosticoOCondicion)
++ setFamiliar(familiar:Familiar): void
++ setHistorialAtencion(historial:HistorialAtencion): void
+«Entity» HistorialAtencion
+- id: int
++ HistorialAtencion()
+usa
+usa
+usa
+usa
+consulta (ORM)
+persiste (ORM)
+persiste (ORM)
+1 registra y representa 0..*
+1 posee 1

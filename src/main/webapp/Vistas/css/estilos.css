@@ -1,0 +1,911 @@
+/* ============================================================
+   EduConecta — Hoja de estilos global
+   Paleta azul marino · diseño elegante, actual y responsivo
+   ============================================================ */
+
+:root {
+    --azul-950: #071527;
+    --azul-900: #0b1f3a;
+    --azul-800: #10294e;
+    --azul-700: #16386b;
+    --azul-600: #1d4e89;
+    --azul-500: #2563a8;
+    --azul-400: #4d84c4;
+    --azul-100: #dbe7f5;
+    --azul-50:  #f2f6fc;
+    --exito:    #157f5f;
+    --exito-bg: #e2f5ee;
+    --error:    #b3261e;
+    --error-bg: #fdecea;
+    --advertencia: #8a6d00;
+    --advertencia-bg: #fdf6dd;
+    --texto:    #1c2b3a;
+    --texto-suave: #5a6b7e;
+    --borde:    #d7e0ec;
+    --blanco:   #ffffff;
+    --sombra:   0 10px 30px rgba(11, 31, 58, 0.12);
+    --radio:    14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--azul-50);
+    color: var(--texto);
+    min-height: 100vh;
+    line-height: 1.55;
+}
+
+/* ---------- Pantallas de acceso (login / registro) ---------- */
+
+.fondo-acceso {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background:
+        radial-gradient(1200px 600px at 85% -10%, rgba(77, 132, 196, 0.35), transparent 60%),
+        radial-gradient(900px 500px at -10% 110%, rgba(37, 99, 168, 0.30), transparent 55%),
+        linear-gradient(150deg, var(--azul-950) 0%, var(--azul-900) 45%, var(--azul-700) 100%);
+}
+
+.tarjeta-acceso {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    width: 100%;
+    max-width: 430px;
+    padding: 2.5rem 2.25rem;
+}
+
+.tarjeta-acceso.ancha {
+    max-width: 720px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 0.35rem;
+}
+
+.marca .logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--azul-600), var(--azul-400));
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca h1 {
+    font-size: 1.55rem;
+    color: var(--azul-900);
+    letter-spacing: -0.02em;
+}
+
+.subtitulo {
+    text-align: center;
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+    margin-bottom: 1.6rem;
+}
+
+/* ---------- Formularios ---------- */
+
+.campo {
+    margin-bottom: 1.05rem;
+}
+
+.campo label {
+    display: block;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--azul-800);
+    margin-bottom: 0.3rem;
+}
+
+.campo label .opcional {
+    color: var(--texto-suave);
+    font-weight: 400;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1.5px solid var(--borde);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--texto);
+    background: var(--blanco);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--azul-500);
+    box-shadow: 0 0 0 3px rgba(37, 99, 168, 0.18);
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.fila-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+}
+
+/* ---------- Botones ---------- */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.66rem 1.35rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primario {
+    background: linear-gradient(135deg, var(--azul-700), var(--azul-500));
+    color: var(--blanco);
+    box-shadow: 0 6px 16px rgba(22, 56, 107, 0.35);
+}
+
+.btn-primario:hover {
+    background: linear-gradient(135deg, var(--azul-800), var(--azul-600));
+}
+
+.btn-secundario {
+    background: var(--azul-100);
+    color: var(--azul-800);
+}
+
+.btn-secundario:hover {
+    background: #ccdcf0;
+}
+
+.btn-contorno {
+    background: transparent;
+    color: var(--azul-700);
+    border: 1.5px solid var(--azul-500);
+}
+
+.btn-contorno:hover {
+    background: var(--azul-50);
+}
+
+.btn-bloque {
+    width: 100%;
+}
+
+.acciones-formulario {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.4rem;
+    flex-wrap: wrap;
+}
+
+.acciones-formulario .btn {
+    flex: 1;
+    min-width: 140px;
+}
+
+/* ---------- Alertas / mensajes ---------- */
+
+.alerta {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    margin-bottom: 1.1rem;
+    border: 1px solid transparent;
+}
+
+.alerta-error {
+    background: var(--error-bg);
+    color: var(--error);
+    border-color: #f3c2be;
+}
+
+.alerta-exito {
+    background: var(--exito-bg);
+    color: var(--exito);
+    border-color: #b9e6d6;
+}
+
+/* ---------- Barra superior de la aplicación ---------- */
+
+.barra-superior {
+    background: linear-gradient(120deg, var(--azul-950), var(--azul-800));
+    color: var(--blanco);
+    padding: 0.7rem 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 16px rgba(7, 21, 39, 0.35);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.barra-superior .marca {
+    margin: 0;
+}
+
+.barra-superior .marca h1 {
+    color: var(--blanco);
+    font-size: 1.15rem;
+}
+
+.barra-superior .logo {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+}
+
+.barra-superior nav {
+    display: flex;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+}
+
+.barra-superior nav a {
+    color: #cfe0f4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.45rem 0.85rem;
+    border-radius: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.barra-superior nav a:hover,
+.barra-superior nav a.activo {
+    background: rgba(255, 255, 255, 0.14);
+    color: var(--blanco);
+}
+
+.usuario-sesion {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.85rem;
+}
+
+.usuario-sesion .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--azul-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--blanco);
+}
+
+.usuario-sesion a {
+    color: #ffd9d6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.usuario-sesion a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Contenido ---------- */
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+}
+
+.encabezado-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.4rem;
+}
+
+.encabezado-seccion h2 {
+    color: var(--azul-900);
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.encabezado-seccion p {
+    color: var(--texto-suave);
+    font-size: 0.93rem;
+}
+
+/* ---------- Héroe de páginas principales ---------- */
+
+.heroe {
+    background:
+        radial-gradient(700px 300px at 90% -20%, rgba(77, 132, 196, 0.4), transparent 60%),
+        linear-gradient(135deg, var(--azul-900), var(--azul-600));
+    color: var(--blanco);
+    border-radius: var(--radio);
+    padding: 2.2rem 2rem;
+    margin-bottom: 1.8rem;
+    box-shadow: var(--sombra);
+}
+
+.heroe h2 {
+    font-size: 1.7rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.4rem;
+}
+
+.heroe p {
+    color: #d9e6f6;
+    max-width: 640px;
+    font-size: 0.97rem;
+}
+
+/* ---------- Tarjetas ---------- */
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem;
+}
+
+.tarjeta {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: 0 4px 18px rgba(11, 31, 58, 0.08);
+    border: 1px solid #e6edf6;
+    padding: 1.4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra);
+}
+
+.tarjeta h3 {
+    color: var(--azul-900);
+    font-size: 1.08rem;
+}
+
+.tarjeta .detalle {
+    font-size: 0.88rem;
+    color: var(--texto-suave);
+}
+
+.tarjeta .detalle strong {
+    color: var(--azul-800);
+}
+
+.tarjeta .pie {
+    margin-top: auto;
+    padding-top: 0.8rem;
+}
+
+.tarjeta-enlace {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------- Tablas ---------- */
+
+.envoltura-tabla {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    border: 1px solid #e6edf6;
+    box-shadow: 0 4px 18px rgba(11, 31, 58, 0.08);
+    overflow-x: auto;
+}
+
+table.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 640px;
+}
+
+table.tabla th {
+    background: var(--azul-900);
+    color: var(--blanco);
+    text-align: left;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.85rem 1rem;
+}
+
+table.tabla td {
+    padding: 0.85rem 1rem;
+    border-top: 1px solid #edf2f9;
+    font-size: 0.92rem;
+}
+
+table.tabla tbody tr:hover {
+    background: var(--azul-50);
+}
+
+/* ---------- Insignias de estado ---------- */
+
+.insignia {
+    display: inline-block;
+    padding: 0.22rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.insignia-agendada {
+    background: var(--azul-100);
+    color: var(--azul-700);
+}
+
+.insignia-atendida {
+    background: var(--exito-bg);
+    color: var(--exito);
+}
+
+.insignia-no-asistida {
+    background: var(--error-bg);
+    color: var(--error);
+}
+
+/* ---------- Horarios (chips) ---------- */
+
+.grupo-horarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.chip-horario {
+    background: var(--blanco);
+    border: 1.5px solid var(--azul-100);
+    color: var(--azul-800);
+    border-radius: 10px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.chip-horario .hora {
+    color: var(--azul-500);
+}
+
+/* ---------- Calendario mensual del Especialista (CU-04, paso 10) ---------- */
+
+.nav-calendario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.nav-calendario h3 {
+    color: var(--azul-900);
+    font-size: 1.25rem;
+    text-align: center;
+    flex: 1;
+}
+
+.btn.deshabilitado {
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+.envoltura-calendario {
+    overflow-x: auto;
+}
+
+.calendario-mes {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.45rem;
+    min-width: 680px;
+}
+
+.celda-encabezado {
+    background: linear-gradient(120deg, var(--azul-900), var(--azul-700));
+    color: var(--blanco);
+    text-align: center;
+    padding: 0.45rem 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: 8px;
+}
+
+.celda-dia {
+    background: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    min-height: 96px;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.celda-dia.vacia {
+    background: transparent;
+    border: none;
+}
+
+/* Día pasado: el calendario ya avanzó; sus citas registradas se conservan. */
+.celda-dia.pasado {
+    background: #eef1f6;
+    border-style: dashed;
+}
+
+.celda-dia.pasado .numero-dia {
+    color: #9aa7b8;
+}
+
+.celda-dia.hoy {
+    border: 2px solid var(--azul-500);
+    box-shadow: 0 0 0 3px rgba(37, 99, 168, 0.15);
+}
+
+.celda-dia.hoy .numero-dia {
+    background: var(--azul-600);
+    color: var(--blanco);
+}
+
+.numero-dia {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--azul-800);
+}
+
+.horas-dia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.chip-horario.mini {
+    padding: 0.12rem 0.4rem;
+    font-size: 0.68rem;
+    border-radius: 6px;
+}
+
+/* Horario disponible → verde */
+.chip-horario.disponible {
+    background: var(--exito-bg);
+    border-color: #9ed9c3;
+    color: var(--exito);
+    text-align: center;
+}
+
+/* Horario RESERVADO (ocupado) → rojo */
+.chip-horario.reservado {
+    background: var(--error-bg);
+    border-color: #f0b6b1;
+    color: var(--error);
+    text-align: center;
+    text-decoration: line-through;
+}
+
+/* ---------- Selección de fecha y hora en el formulario de agendamiento ---------- */
+
+.celda-dia.dia-seleccionable {
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+}
+
+.celda-dia.dia-seleccionable:hover {
+    border-color: var(--azul-500);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(11, 31, 58, 0.12);
+}
+
+.celda-dia.seleccionado {
+    border: 2px solid var(--exito);
+    background: var(--exito-bg);
+    box-shadow: 0 0 0 3px rgba(21, 127, 95, 0.18);
+}
+
+.celda-dia.seleccionado .numero-dia {
+    background: var(--exito);
+    color: var(--blanco);
+}
+
+.chip-horario.opcion {
+    cursor: pointer;
+    font-family: inherit;
+    background: var(--blanco);
+    border: 1.5px solid var(--azul-100);
+    color: var(--azul-800);
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.12s ease;
+}
+
+.chip-horario.opcion:hover {
+    border-color: var(--azul-500);
+    transform: translateY(-1px);
+}
+
+.chip-horario.opcion.seleccionada {
+    background: linear-gradient(135deg, var(--azul-700), var(--azul-500));
+    border-color: var(--azul-700);
+    color: var(--blanco);
+}
+
+.leyenda-calendario {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+    margin-bottom: 0.9rem;
+}
+
+.leyenda-calendario .punto {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.35rem;
+    vertical-align: -1px;
+}
+
+.leyenda-calendario .punto.disponible {
+    background: var(--exito);
+}
+
+.leyenda-calendario .punto.reservado {
+    background: var(--error);
+}
+
+.leyenda-calendario .punto.pasado {
+    background: #9aa7b8;
+}
+
+/* ---------- Línea de tiempo del historial ---------- */
+
+.linea-tiempo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.evento-historial {
+    background: var(--blanco);
+    border-left: 5px solid var(--azul-500);
+    border-radius: 0 var(--radio) var(--radio) 0;
+    box-shadow: 0 4px 14px rgba(11, 31, 58, 0.07);
+    padding: 1.1rem 1.3rem;
+}
+
+.evento-historial.inasistencia {
+    border-left-color: var(--error);
+}
+
+.evento-historial h4 {
+    color: var(--azul-900);
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+}
+
+.evento-historial p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.evento-historial p strong {
+    color: var(--azul-800);
+}
+
+/* ---------- Estado vacío ---------- */
+
+.estado-vacio {
+    background: var(--blanco);
+    border: 1.5px dashed var(--borde);
+    border-radius: var(--radio);
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    color: var(--texto-suave);
+}
+
+.estado-vacio .icono {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Selección de tipo de cuenta ---------- */
+
+.opciones-tipo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+    margin-top: 1.2rem;
+}
+
+.opcion-tipo {
+    border: 2px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.6rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--texto);
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    background: var(--blanco);
+}
+
+.opcion-tipo:hover {
+    border-color: var(--azul-500);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra);
+}
+
+.opcion-tipo .icono {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.opcion-tipo h3 {
+    color: var(--azul-900);
+    margin-bottom: 0.35rem;
+}
+
+.opcion-tipo p {
+    font-size: 0.86rem;
+    color: var(--texto-suave);
+}
+
+/* ---------- Credenciales dinámicas (registro de especialista) ---------- */
+
+.fila-credencial {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 0.7rem;
+    align-items: end;
+    background: var(--azul-50);
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.leyenda-campos {
+    background: var(--azul-50);
+    border: 1px solid var(--azul-100);
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    font-size: 0.82rem;
+    color: var(--azul-800);
+    margin-bottom: 1.2rem;
+}
+
+.leyenda-campos strong {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+/* ---------- Enlaces de retorno ---------- */
+
+.enlace-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--azul-600);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.enlace-volver:hover {
+    text-decoration: underline;
+}
+
+.enlace-simple {
+    color: var(--azul-600);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.enlace-simple:hover {
+    text-decoration: underline;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.pie-acceso {
+    text-align: center;
+    margin-top: 1.4rem;
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 720px) {
+    .fila-doble,
+    .opciones-tipo {
+        grid-template-columns: 1fr;
+    }
+
+    .fila-credencial {
+        grid-template-columns: 1fr;
+    }
+
+    .barra-superior {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contenedor {
+        padding: 1.4rem 0.9rem 2.4rem;
+    }
+
+    .heroe {
+        padding: 1.6rem 1.3rem;
+    }
+
+    .tarjeta-acceso {
+        padding: 1.8rem 1.3rem;
+    }
+
+    .acciones-formulario {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,16 @@
+Diagrama de robustez — CU-01 Iniciar Sesión
+Usuario
+IniciarSesion Controlador
+Interfaces «boundary»
+Formulario de inicio de sesión
+Página principal del Familiar
+Página principal del Especialista
+Interacciones con el formulario 2. Mostrar formulario de inicio de sesión. 5a.2. Mostrar «Complete los campos obligatorios». 5a.3. Mantener el formulario con los datos ingresados. 6a.2. Mostrar mensaje de credenciales incorrectas. 6a.3. Mantener el formulario de inicio de sesión. 7a.2. Mostrar mensaje de credenciales incorrectas. 7a.3. Mantener el formulario de inicio de sesión.
+Entidades del dominio «entity»
+Usuario
+Operaciones sobre Usuario 5. Verificar campos obligatorios. 5a.1. Identificar campos sin completar. 6. Buscar cuenta por correo. 6a.1. Identificar cuenta inexistente. 7. Comprobar contraseña. 7a.1. Identificar contraseña incorrecta. 8. Identificar rol. 9. Obtener información del Usuario.
+1. Solicitar ingresar al sistema 3. Ingresar credenciales (correo, contraseña) 4. Confirmar ingreso
+2, 5a.2-5a.3, 6a.2-6a.3, 7a.2-7a.3
+10. Mostrar página principal {rol=familiar}
+10. Mostrar página principal {rol=especialista}
+5-9. Validar credenciales, buscar cuenta, comprobar contraseña, identificar rol y obtener información del Usuario

@@ -1,0 +1,73 @@
+CU-02: Registrar Usuario — Diagrama de Clases de Diseño
+Métodos tomados del Diagrama de Secuencia de Diseño · sin vistas JSP · capas: Servlet (rojo) · Service (azul) · DAO (morado) · Entidad (amarillo)
+«Servlet» RegistrarUsuarioControlador
+- registroUsuarioService: RegistroUsuarioService
++ doGet(request:HttpServletRequest, response:HttpServletResponse): void
++ doPost(request:HttpServletRequest, response:HttpServletResponse): void
+- ruteador(request:HttpServletRequest, response:HttpServletResponse): void
++ solicitarRegistro(): void
++ seleccionarTipoCuenta(tipoCuenta:String): void
++ completarInformacion(datos:Map): void
++ cargarDocumentos(documentos:List ): void
++ confirmarRegistro(): void
++ cancelarRegistro(): void
+- descartarDatosNoConfirmados(): void
+«Service» RegistroUsuarioService
+- usuarioDAO: UsuarioDAO
+- familiarDAO: FamiliarDAO
+- especialistaDAO: EspecialistaDAO
+- credencialProfesionalDAO: CredencialProfesionalDAO
++ obtenerDatosRequeridos(tipoCuenta:String): List
++ verificarCamposYFormato(datos:Map): boolean
++ verificarCorreoNoRegistrado(correo:String): boolean
++ verificarCedulaNoRegistrada(cedula:String): boolean
++ verificarRucNoRegistrado(ruc:String): boolean
++ verificarDocumentosCargados(documentos:List ): boolean
++ crearCuenta(tipoCuenta:String, datos:Map): Usuario
++ registrarInformacion(familiar:Familiar): void
++ registrarInformacion(especialista:Especialista, credenciales:List ): void
+«DAO» UsuarioDAO
+- em: EntityManager
++ existeCorreo(correo:String): boolean
++ existeCedula(cedula:String): boolean
+«DAO» FamiliarDAO
+- em: EntityManager
++ insertar(familiar:Familiar): Familiar
+«DAO» EspecialistaDAO
+- em: EntityManager
++ existeRuc(ruc:String): boolean
++ insertar(especialista:Especialista): Especialista
+«DAO» CredencialProfesionalDAO
+- em: EntityManager
++ insertar(credencial:CredencialProfesional): CredencialProfesional
+«Entity» Usuario
+- id: int
+- nombresCompletos: String
+- apellidosCompletos: String
+- numeroCedula: String
+- correoElectronico: String
+- provincia: String
+- ciudad: String
+- contrasena: String
+- rol: String
+«Entity» Familiar
++ Familiar(nombres, apellidos, cedula, correo, provincia, ciudad, contrasena)
+«Entity» Especialista
+- RUC: String
+- direccionDeAtencion: String
++ Especialista(nombres, apellidos, cedula, ruc, correo, provincia, ciudad, direccionDeAtencion, contrasena)
+«Entity» CredencialProfesional
+- id: int
+- tituloProfesional: String
+- documentoDeRespaldo: String
++ CredencialProfesional(tituloProfesional:String, documentoDeRespaldo:String)
+usa
+usa
+usa
+usa
+usa
+consulta (ORM)
+persiste (ORM)
+persiste (ORM)
+persiste (ORM)
+1 acredita 1..*

@@ -1,0 +1,39 @@
+Diagrama de robustez — CU-05 Atender Cita
+Especialista
+AtenderCita Controlador
+Interfaces «boundary»
+Página principal del Especialista
+Sección Citas asignadas
+Detalle de la cita
+Historial de atención del menor
+Formulario de registro de atención
+Formulario de registro de inasistencia
+Página principal 3. Mostrar página principal del Especialista.
+Sección Citas asignadas 6. Mostrar sección Citas asignadas. 26. Mostrar «La atención ha sido registrada correctamente». 27. Mostrar sección con información actualizada. 7a.15. Mostrar «La inasistencia ha sido registrada correctamente». 7a.16. Mostrar sección con información actualizada.
+Detalle de la cita 10. Mostrar detalles de la cita e información del menor. 7a.4. Mostrar detalles de la cita. 18a.5. Mostrar detalles de la cita y la información del menor.
+Historial del menor 14. Mostrar antecedentes y registros de atenciones anteriores.
+Formulario de atención 16. Mostrar formulario de registro de atención. 19a.2. Mostrar «Complete los campos obligatorios». 19a.3. Mantener formulario con información ingresada. 18a.2. Descartar información no confirmada.
+Formulario de inasistencia 7a.6. Mostrar formulario de registro de inasistencia.
+Entidades del dominio «entity»
+Especialista
+Cita
+PerfilMenor
+HistorialAtencion
+Atencion
+Operaciones sobre Especialista 2. Obtener información del especialista.
+Operaciones sobre Cita 5. Obtener citas vinculadas con el Especialista. 8. Obtener detalles de la cita seleccionada. 23. Actualizar estado a ATENDIDA. 24. Registrar cambios realizados. 25. Obtener lista actualizada de citas. 7a.2. Obtener detalles de la cita seleccionada. 7a.9. Crear registro de inasistencia. 7a.10. Vincular inasistencia con cita y menor. 7a.12. Actualizar estado a NO ASISTIDA. 7a.13. Registrar cambios realizados. 7a.14. Obtener lista actualizada de citas. 18a.3. Obtener detalles de la cita.
+Operaciones sobre PerfilMenor 9. Obtener información del Perfil del Menor. 7a.3. Obtener información del Perfil del Menor. 18a.4. Obtener información del Perfil del Menor.
+Operaciones sobre HistorialAtencion 12. Obtener historial vinculado con el Perfil del Menor. 22. Incorporar la atención al historial. 7a.11. Incorporar la inasistencia al historial.
+Operaciones sobre Atencion 13. Obtener registros de atenciones anteriores. 19. Verificar campos completos e información válida. 19a.1. Identificar campos obligatorios sin completar. 20. Crear registro de la atención. 21. Vincular la atención con cita, especialista y menor. 24. Registrar cambios realizados. 7a.8. Verificar información obligatoria completa.
+1. Solicitar ingresar a la Página principal del Especialista 4. Consultar citas asignadas 7. Seleccionar una cita 11. Consultar historial del menor 15. Solicitar registrar la atención 17. Ingresar información de la atención 18. Confirmar registro 7a.1. Seleccionar cita no asistida 7a.5. Solicitar registrar la inasistencia 7a.7. Ingresar observación y confirmar registro 18a.1. Cancelar registro de la atención
+3. Mostrar página principal
+6, 26-27, 7a.15-7a.16
+10, 7a.4, 18a.5
+14. Mostrar historial
+16, 19a.2-19a.3, 18a.2
+7a.6. Mostrar formulario de inasistencia
+2. Obtener información del especialista
+5, 8, 23-25, 7a.2, 7a.9-7a.14, 18a.3
+9, 7a.3, 18a.4
+12, 22, 7a.11
+13, 19-21, 24, 7a.8

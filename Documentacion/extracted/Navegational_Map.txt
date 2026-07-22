@@ -1,0 +1,67 @@
+Mapa navegacional de EduConecta
+Acceso y registro
+Formulario de inicio de sesión
+Selección del tipo de cuenta
+Formulario de registro de Familiar
+Formulario de registro de Especialista
+entrar
+solicitar_registro
+validar_credenciales / {credenciales=incorrectas}
+seleccionar_rol / {rol=familiar}
+seleccionar_rol / {rol=especialista}
+cancelar_registro
+guardar_datos / {datos=válidos}
+validar_datos / {datos=incompletos o duplicados}
+cancelar
+guardar_datos / {datos y documentos=válidos}
+validar_datos / {datos=incorrectos o documentos=faltantes}
+cancelar
+Navegación del Familiar
+Página principal del Familiar
+Sección Perfiles de menores
+Formulario de registro de menor
+Lista de Especialistas
+Información del Especialista
+Formulario de agendamiento de cita
+Sección Mis citas
+consultar_perfiles / {rol=familiar}
+registrar_perfil_menor
+guardar_perfil / {datos=válidos}
+cancelar_registro
+validar_perfil / {datos=inválidos o menor=registrado}
+volver_inicio
+listar_especialistas / {rol=familiar}
+seleccionar_especialista
+volver_lista
+solicitar_agendamiento
+cancelar_agendamiento
+registrar_cita / {datos=válidos y horario=disponible}
+validar_cita / {datos=inválidos}
+verificar_disponibilidad / {horario=no_disponible}
+volver_inicio
+consultar_citas / {rol=familiar}
+volver_inicio
+Navegación del Especialista
+Página principal del Especialista
+Sección Citas asignadas
+Detalle de la cita
+Historial de atención del menor
+Formulario de registro de atención
+Formulario de registro de inasistencia
+consultar_citas / {rol=especialista}
+seleccionar_cita
+volver_citas
+volver_inicio
+consultar_historial
+volver_detalle
+registrar_atención / {cita=asistida}
+guardar_atención / {datos=válidos}
+validar_atención / {datos=incompletos}
+cancelar_registro
+registrar_inasistencia / {cita=no_asistida}
+guardar_inasistencia / {registro=confirmado}
+cancelar_registro
+ingresar / {rol=familiar}
+ingresar / {rol=especialista}
+cerrar_sesión
+cerrar_sesión

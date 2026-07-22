@@ -1,0 +1,30 @@
+Diagrama de robustez — CU-02 Registrar Usuario
+Familiar / Especialista
+RegistrarUsuario Controlador
+Interfaces «boundary»
+Selección del tipo de cuenta
+Formulario de registro de Familiar
+Formulario de registro de Especialista
+Formulario de inicio de sesión
+Interfaz de selección 2. Mostrar tipos de cuenta disponibles: Familiar y Especialista.
+Formulario de Familiar 5. Mostrar formulario {rol=familiar}. 9a.2. Mostrar mensaje: datos incompletos o no válidos. 9a.3. Mantener formulario con datos ingresados. 10a.2. Mostrar «El correo electrónico ingresado ya se encuentra registrado». 10a.3. Mantener formulario para corregir. 11a.2. Mostrar «El número de cédula ingresado ya se encuentra registrado». 11a.3. Mantener formulario para corregir.
+Formulario de Especialista 5. Mostrar formulario {rol=especialista}. 9a.2. Mostrar mensaje: datos incompletos o no válidos. 9a.3. Mantener formulario con datos ingresados. 10a.2 / 11a.2. Mostrar mensaje: dato ya registrado. 10a.3 / 11a.3. Mantener formulario para corregir. 12a.2. Mostrar «El RUC ingresado ya se encuentra registrado». 12a.3. Mantener formulario para corregir. 13a.2. Mostrar «Revise y cargue correctamente los documentos solicitados». 13a.3. Mantener formulario de registro.
+Inicio de sesión 8a.2. Descartar información no confirmada. 8a.3. Mostrar formulario de inicio de sesión. 16. Mostrar mensaje: «Registro realizado correctamente». 17. Mostrar formulario de inicio de sesión.
+Entidades del dominio «entity»
+Usuario
+Familiar
+Especialista
+CredencialProfesional
+Operaciones sobre Usuario 4. Obtener datos requeridos según el rol. 9. Verificar campos completos y formato válido. 9a.1. Identificar campos incompletos o formato no válido. 10. Verificar correo no registrado. 10a.1. Identificar correo perteneciente a otra cuenta. 11. Verificar cédula no registrada. 11a.1. Identificar cédula perteneciente a otra cuenta.
+Registro de Familiar 14. Crear cuenta con el tipo seleccionado {rol=familiar}. 15. Registrar información proporcionada.
+Registro de Especialista 12. Verificar RUC no registrado {rol=especialista}. 12a.1. Identificar RUC perteneciente a otro Especialista. 14. Crear cuenta con el tipo seleccionado {rol=especialista}. 15. Registrar información proporcionada.
+Credenciales profesionales 13. Verificar documentos cargados {rol=especialista}. 13a.1. Identificar documentos no cargados. 15. Registrar credenciales profesionales (títulos, documentos).
+1. Solicitar registrarse desde el formulario de inicio de sesión 3. Seleccionar tipo de cuenta (rol) 6. Completar información solicitada (datos) 7. Cargar documentos requeridos {rol=especialista} 8. Confirmar registro 8a.1. Cancelar registro
+2. Mostrar tipos de cuenta
+5, 9a.2-9a.3, 10a.2-10a.3, 11a.2-11a.3 {rol=familiar}
+5, 9a.2-9a.3, 10a.2-13a.3 {rol=especialista}
+8a.2-8a.3, 16-17
+4, 9-11 y validaciones asociadas
+14-15 {rol=familiar}
+12, 12a.1, 14-15 {rol=especialista}
+13, 13a.1, 15 {rol=especialista}

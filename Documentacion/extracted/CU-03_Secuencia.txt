@@ -1,0 +1,75 @@
+CU-03: Registrar Perfil de Menor — Diagrama de Secuencia de Diseño
+Java Dynamic Web Project · JSP (vista) · Servlet (controlador) · Service · DAO · Entidad (ORM/JPA) · numeración idéntica al caso de uso
+Familiar
+«JSP» PaginaPrincipalFamiliar
+«JSP» SeccionPerfilesMenores
+«JSP» FormularioRegistroMenor
+«Servlet» RegistrarPerfilMenorControlador
+«Service» PerfilMenorService
+«DAO» FamiliarDAO
+«DAO» PerfilMenorDAO
+«DAO» HistorialAtencionDAO
+«Entity» PerfilMenor
+«Entity» HistorialAtencion
+alt
+12a. Menor registrado previamente [menorRegistrado == true]
+[menorRegistrado == false]
+alt
+11a. Datos incompletos o no válidos [datosValidos == false]
+[datosValidos == true]
+alt
+10a. Cancelar registro [confirmacion == false]
+[confirmacion == true]
+1. solicitarIngreso(): void
+ruteador(request:HttpServletRequest, response:HttpServletResponse): void
+2. obtenerFamiliar(idFamiliar:int): Familiar
+buscarPorId(idFamiliar:int): Familiar
+return: familiar:Familiar
+return: familiar:Familiar
+3. mostrarPaginaPrincipalFamiliar(familiar:Familiar): void
+4. consultarPerfilesMenores(): void
+5. buscarPerfilesPorFamiliar(idFamiliar:int): List
+buscarPorFamiliar(idFamiliar:int): List
+«query» SELECT p FROM PerfilMenor p WHERE p.familiar.id = :idFamiliar
+return: perfiles:List
+return: perfiles:List
+return: perfiles:List
+6. mostrarPerfilesMenores(perfiles:List ): void
+7. solicitarRegistroPerfilMenor(): void
+8. mostrarFormularioRegistroMenor(): void
+9. ingresarInformacionMenor(nombres:String, apellidos:String, cedula:String, edad:int, anioEscolar:String, provincia:String, ciudad:String, diagnosticoOCondicion:String): void
+10a.1. cancelarRegistro(): void
+10a.2. descartarDatosNoConfirmados(): void
+10a.3. buscarPerfilesPorFamiliar(idFamiliar:int): List
+return: perfiles:List
+10a.4. mostrarPerfilesMenores(perfiles:List ): void
+10. confirmarRegistro(): void
+11. verificarCamposYValidez(datos:Map): boolean
+return: datosValidos:boolean
+11a.1. Identificar campos incompletos o información no válida
+11a.2. mostrarMensajeError(mensaje:String): void
+11a.3. mostrarFormularioRegistroMenor(datosIngresados:Map): void
+12. verificarMenorNoRegistrado(idFamiliar:int, cedula:String): boolean
+existePorFamiliarYCedula(idFamiliar:int, cedula:String): boolean
+return: existe:boolean
+return: menorRegistrado:boolean
+12a.1. Identificar menor ya registrado — 12a.4. No se crea un nuevo Perfil de Menor
+12a.2. mostrarMensajeError(mensaje:String): void
+12a.3. mostrarFormularioRegistroMenor(datosIngresados:Map): void
+13. crearPerfilMenor(datos:Map): PerfilMenor
+«create» PerfilMenor(nombres, apellidos, cedula, edad, anioEscolar, provincia, ciudad, diagnosticoOCondicion)
+return: perfil:PerfilMenor
+«create» HistorialAtencion()
+return: historial:HistorialAtencion
+setHistorialAtencion(historial:HistorialAtencion): void
+return: perfil:PerfilMenor
+14. vincularConFamiliar(perfil:PerfilMenor, familiar:Familiar): void
+setFamiliar(familiar:Familiar): void
+insertar(historial:HistorialAtencion): HistorialAtencion
+«persist» em.persist(historial)
+insertar(perfil:PerfilMenor): PerfilMenor
+«persist» em.persist(perfil)
+15. buscarPerfilesPorFamiliar(idFamiliar:int): List
+return: perfiles:List
+16. mostrarMensajeExito(mensaje:String): void
+17. mostrarPerfilesMenores(perfiles:List ): void

@@ -1,0 +1,131 @@
+
+    <mxGraphModel dx="3433" dy="1783" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=26;fontStyle=1;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:left;&#39;&gt;Diagrama de robustez — CU-03 Registrar Perfil de Menor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="1320" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--3" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=14;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Familiar&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="130" x="70" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--4" parent="1" style="shape=umlControl;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;RegistrarPerfilMenor&lt;br/&gt;Controlador&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="240" x="430" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--5" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#eff6ff;swimlaneFillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Interfaces «boundary»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="836" width="2260" x="860" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--6" parent="3ehiWSDTQHQrJX-Lp0Y--5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Página principal&lt;br/&gt;del Familiar&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="180" x="110" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--7" parent="3ehiWSDTQHQrJX-Lp0Y--5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Sección Perfiles&lt;br/&gt;de menores&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="190" x="760" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--8" parent="3ehiWSDTQHQrJX-Lp0Y--5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Formulario de registro&lt;br/&gt;de menor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="200" x="1794" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--9" parent="3ehiWSDTQHQrJX-Lp0Y--5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Página principal&lt;/b&gt;&lt;br/&gt;3. Mostrar página principal del Familiar.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="310" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--10" parent="3ehiWSDTQHQrJX-Lp0Y--5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Sección Perfiles de menores&lt;/b&gt;&lt;br/&gt;6. Mostrar sección Perfiles de menores (perfiles).&lt;br/&gt;10a.4. Mostrar sección Perfiles de menores.&lt;br/&gt;16. Mostrar mensaje: «Perfil de menor registrado con éxito».&lt;br/&gt;17. Mostrar sección Perfiles de menores (lista actualizada).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="346" x="650" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--11" parent="3ehiWSDTQHQrJX-Lp0Y--5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Formulario de registro de menor&lt;/b&gt;&lt;br/&gt;8. Mostrar formulario de registro de menor.&lt;br/&gt;10a.2. Descartar información no confirmada.&lt;br/&gt;11a.2. Mostrar mensaje: datos incompletos o no válidos.&lt;br/&gt;11a.3. Mantener formulario con datos ingresados.&lt;br/&gt;12a.2. Mostrar mensaje: «El menor ya se encuentra registrado».&lt;br/&gt;12a.3. Mantener formulario de registro.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="357" x="1302" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--12" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#f0fdf4;swimlaneFillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Entidades del dominio «entity»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="720" width="2260" x="860" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--13" parent="3ehiWSDTQHQrJX-Lp0Y--12" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Familiar&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="170" x="110" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--14" parent="3ehiWSDTQHQrJX-Lp0Y--12" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;PerfilMenor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="180" x="810" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--15" parent="3ehiWSDTQHQrJX-Lp0Y--12" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;HistorialAtencion&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="190" x="1510" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--16" parent="3ehiWSDTQHQrJX-Lp0Y--12" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre Familiar&lt;/b&gt;&lt;br/&gt;2. Obtener información del familiar.&lt;br/&gt;14. Vincular Perfil del Menor con el Familiar.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="360" x="30" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--17" parent="3ehiWSDTQHQrJX-Lp0Y--12" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre PerfilMenor&lt;/b&gt;&lt;br/&gt;5. Buscar perfiles de menores vinculados.&lt;br/&gt;11. Verificar campos completos e información válida.&lt;br/&gt;11a.1. Identificar campos incompletos o información no válida.&lt;br/&gt;12. Verificar menor no registrado previamente.&lt;br/&gt;12a.1. Identificar menor ya registrado.&lt;br/&gt;13. Crear Perfil del Menor.&lt;br/&gt;15. Obtener lista actualizada de perfiles.&lt;br/&gt;10a.3. Obtener lista de perfiles de menores.&lt;br/&gt;12a.4. No crear un nuevo Perfil de Menor.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="338" x="471" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--18" parent="3ehiWSDTQHQrJX-Lp0Y--12" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre HistorialAtencion&lt;/b&gt;&lt;br/&gt;13. Crear historial de atención del menor.&lt;br/&gt;(composición 1..1 del modelo de dominio).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="430" x="1616" y="339" as="geometry" />
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--19" edge="1" parent="1" source="3ehiWSDTQHQrJX-Lp0Y--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#1f2937;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="3ehiWSDTQHQrJX-Lp0Y--4" value="&lt;div style=&#39;text-align:center;&#39;&gt;1. Solicitar ingresar a la Página principal del Familiar&lt;br/&gt;4. Consultar perfiles de menores&lt;br/&gt;7. Solicitar registrar nuevo Perfil de Menor&lt;br/&gt;9. Ingresar información del menor&lt;br/&gt;10. Confirmar registro&lt;br/&gt;10a.1. Cancelar registro&lt;/div&gt;">
+          <mxGeometry relative="1" y="-18" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="845" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--20" edge="1" parent="1" source="3ehiWSDTQHQrJX-Lp0Y--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.78;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="3ehiWSDTQHQrJX-Lp0Y--13" value="&lt;div style=&#39;text-align:center;&#39;&gt;2 y 14&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="900" />
+              <mxPoint x="770" y="900" />
+              <mxPoint x="770" y="1175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--21" edge="1" parent="1" source="3ehiWSDTQHQrJX-Lp0Y--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.18;exitDx=0;exitDy=0;entryX=0.005;entryY=0.531;entryDx=0;entryDy=0;entryPerimeter=0;" target="3ehiWSDTQHQrJX-Lp0Y--6" value="&lt;div style=&#39;text-align:center;&#39;&gt;3. Mostrar página principal del Familiar&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="760.09" />
+              <mxPoint x="760.02" y="760.09" />
+              <mxPoint x="760.02" y="251.32" />
+              <mxPoint x="970.9" y="251.32" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--22" edge="1" parent="1" source="3ehiWSDTQHQrJX-Lp0Y--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.88;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="3ehiWSDTQHQrJX-Lp0Y--14" value="&lt;div style=&#39;text-align:center;&#39;&gt;5, 10a.3, 11-12a.4, 13 y 15&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="670.08" y="935" />
+              <mxPoint x="800.08" y="935" />
+              <mxPoint x="800.08" y="1075.46" />
+              <mxPoint x="1394.69" y="1075.46" />
+              <mxPoint x="1394.69" y="1175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--23" edge="1" parent="1" source="3ehiWSDTQHQrJX-Lp0Y--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.72;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="3ehiWSDTQHQrJX-Lp0Y--15" value="&lt;div style=&#39;text-align:center;&#39;&gt;13. Crear historial de atención&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="602.78" y="965" />
+              <mxPoint x="690.09" y="965" />
+              <mxPoint x="690.09" y="1609.61" />
+              <mxPoint x="2465.04" y="1609.61" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--24" edge="1" parent="1" source="3ehiWSDTQHQrJX-Lp0Y--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.34;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="3ehiWSDTQHQrJX-Lp0Y--7" value="&lt;div style=&#39;text-align:center;&#39;&gt;6, 10a.4, 16 y 17&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="790" />
+              <mxPoint x="790" y="790" />
+              <mxPoint x="790" y="583" />
+              <mxPoint x="1499.25" y="583" />
+              <mxPoint x="1499.25" y="322.5" />
+              <mxPoint x="1620" y="322.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--25" edge="1" parent="1" source="3ehiWSDTQHQrJX-Lp0Y--4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.56;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="3ehiWSDTQHQrJX-Lp0Y--8" value="&lt;div style=&#39;text-align:center;&#39;&gt;8, 10a.2, 11a.2-11a.3, 12a.2-12a.3&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="825" />
+              <mxPoint x="820" y="825" />
+              <mxPoint x="820" y="150" />
+              <mxPoint x="2654" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3ehiWSDTQHQrJX-Lp0Y--26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9fafb;strokeColor=#9ca3af;fontSize=11;fontFamily=Helvetica;align=left;spacingLeft=12;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Convenciones&lt;/b&gt;&lt;br/&gt;Boundary: interfaz presentada al Familiar.&lt;br/&gt;Control: coordina el flujo de registro del menor.&lt;br/&gt;Entity: conceptos del negocio involucrados en validación, creación y vinculación.&lt;br/&gt;Las descripciones extensas se detallan en notas para evitar cruces y superposición.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="155" width="760" x="2320" y="1840" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

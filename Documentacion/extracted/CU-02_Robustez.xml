@@ -1,0 +1,162 @@
+
+    <mxGraphModel dx="2060" dy="1070" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=26;fontStyle=1;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:left;&#39;&gt;Diagrama de robustez — CU-02 Registrar Usuario&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="1200" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-3" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=14;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Familiar /&lt;br/&gt;Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="195" width="157" x="70" y="752" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-4" parent="1" style="shape=umlControl;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;RegistrarUsuario&lt;br/&gt;Controlador&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="220" x="450" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-5" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#eff6ff;swimlaneFillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Interfaces «boundary»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="869" width="2508" x="860" y="11" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-6" parent="KCTpu1rRiRM6G55OTpx4-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Selección del&lt;br/&gt;tipo de cuenta&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="180" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-7" parent="KCTpu1rRiRM6G55OTpx4-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Formulario de registro&lt;br/&gt;de Familiar&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="200" x="690" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-8" parent="KCTpu1rRiRM6G55OTpx4-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Formulario de registro&lt;br/&gt;de Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="210" x="1260" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-9" parent="KCTpu1rRiRM6G55OTpx4-5" style="shape=umlBoundary;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Formulario de&lt;br/&gt;inicio de sesión&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="180" x="1830" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-10" parent="KCTpu1rRiRM6G55OTpx4-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Interfaz de selección&lt;/b&gt;&lt;br/&gt;2. Mostrar tipos de cuenta disponibles:&lt;br/&gt;Familiar y Especialista.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="320" x="70" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-11" parent="KCTpu1rRiRM6G55OTpx4-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Formulario de Familiar&lt;/b&gt;&lt;br/&gt;5. Mostrar formulario {rol=familiar}.&lt;br/&gt;9a.2. Mostrar mensaje: datos incompletos o no válidos.&lt;br/&gt;9a.3. Mantener formulario con datos ingresados.&lt;br/&gt;10a.2. Mostrar «El correo electrónico ingresado ya se encuentra registrado».&lt;br/&gt;10a.3. Mantener formulario para corregir.&lt;br/&gt;11a.2. Mostrar «El número de cédula ingresado ya se encuentra registrado».&lt;br/&gt;11a.3. Mantener formulario para corregir.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="700" x="450" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-12" parent="KCTpu1rRiRM6G55OTpx4-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Formulario de Especialista&lt;/b&gt;&lt;br/&gt;5. Mostrar formulario {rol=especialista}.&lt;br/&gt;9a.2. Mostrar mensaje: datos incompletos o no válidos.&lt;br/&gt;9a.3. Mantener formulario con datos ingresados.&lt;br/&gt;10a.2 / 11a.2. Mostrar mensaje: dato ya registrado.&lt;br/&gt;10a.3 / 11a.3. Mantener formulario para corregir.&lt;br/&gt;12a.2. Mostrar «El RUC ingresado ya se encuentra registrado».&lt;br/&gt;12a.3. Mantener formulario para corregir.&lt;br/&gt;13a.2. Mostrar «Revise y cargue correctamente los documentos solicitados».&lt;br/&gt;13a.3. Mantener formulario de registro.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="285" width="790" x="1180" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-13" parent="KCTpu1rRiRM6G55OTpx4-5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Inicio de sesión&lt;/b&gt;&lt;br/&gt;8a.2. Descartar información no confirmada.&lt;br/&gt;8a.3. Mostrar formulario de inicio de sesión.&lt;br/&gt;16. Mostrar mensaje: «Registro realizado correctamente».&lt;br/&gt;17. Mostrar formulario de inicio de sesión.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="420" x="2027" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-14" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#f0fdf4;swimlaneFillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=1.4;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Entidades del dominio «entity»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="700" width="2380" x="860" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-15" parent="KCTpu1rRiRM6G55OTpx4-14" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Usuario&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="170" x="140" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-16" parent="KCTpu1rRiRM6G55OTpx4-14" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Familiar&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="170" x="660" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-17" parent="KCTpu1rRiRM6G55OTpx4-14" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="170" x="1180" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-18" parent="KCTpu1rRiRM6G55OTpx4-14" style="shape=umlEntity;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=12;fontFamily=Helvetica;strokeColor=#111827;fillColor=#ffffff;" value="&lt;div style=&#39;text-align:center;&#39;&gt;CredencialProfesional&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="210" x="1700" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-19" parent="KCTpu1rRiRM6G55OTpx4-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Operaciones sobre Usuario&lt;/b&gt;&lt;br/&gt;4. Obtener datos requeridos según el rol.&lt;br/&gt;9. Verificar campos completos y formato válido.&lt;br/&gt;9a.1. Identificar campos incompletos o formato no válido.&lt;br/&gt;10. Verificar correo no registrado.&lt;br/&gt;10a.1. Identificar correo perteneciente a otra cuenta.&lt;br/&gt;11. Verificar cédula no registrada.&lt;br/&gt;11a.1. Identificar cédula perteneciente a otra cuenta.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="420" x="30" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-20" parent="KCTpu1rRiRM6G55OTpx4-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Registro de Familiar&lt;/b&gt;&lt;br/&gt;14. Crear cuenta con el tipo seleccionado {rol=familiar}.&lt;br/&gt;15. Registrar información proporcionada.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="420" x="520" y="359" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-21" parent="KCTpu1rRiRM6G55OTpx4-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Registro de Especialista&lt;/b&gt;&lt;br/&gt;12. Verificar RUC no registrado {rol=especialista}.&lt;br/&gt;12a.1. Identificar RUC perteneciente a otro Especialista.&lt;br/&gt;14. Crear cuenta con el tipo seleccionado {rol=especialista}.&lt;br/&gt;15. Registrar información proporcionada.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="510" x="999" y="359" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-22" parent="KCTpu1rRiRM6G55OTpx4-14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9ca3af;dashed=1;fontSize=11;fontFamily=Helvetica;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=10;" value="&lt;div style=&#39;text-align:left;&#39;&gt;&lt;b&gt;Credenciales profesionales&lt;/b&gt;&lt;br/&gt;13. Verificar documentos cargados {rol=especialista}.&lt;br/&gt;13a.1. Identificar documentos no cargados.&lt;br/&gt;15. Registrar credenciales profesionales (títulos, documentos).&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="540" x="1610" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-23" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-3" style="rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#1f2937;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-4" value="&lt;div style=&#39;text-align:center;&#39;&gt;1. Solicitar registrarse desde el formulario de inicio de sesión&lt;br/&gt;3. Seleccionar tipo de cuenta (rol)&lt;br/&gt;6. Completar información solicitada (datos)&lt;br/&gt;7. Cargar documentos requeridos {rol=especialista}&lt;br/&gt;8. Confirmar registro&lt;br/&gt;8a.1. Cancelar registro&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0907" y="113" as="geometry">
+            <mxPoint x="-108" y="-113" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-24" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.16;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-6" value="&lt;div style=&#39;text-align:center;&#39;&gt;2. Mostrar tipos de cuenta&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="760" />
+              <mxPoint x="760" y="760" />
+              <mxPoint x="760" y="205.02" />
+              <mxPoint x="936.3" y="205.02" />
+              <mxPoint x="936.3" y="213.49" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-25" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.33;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-7" value="&lt;div style=&#39;text-align:center;&#39;&gt;5, 9a.2-9a.3, 10a.2-10a.3, 11a.2-11a.3&lt;br/&gt;{rol=familiar}&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="789.94" />
+              <mxPoint x="790" y="789.94" />
+              <mxPoint x="790" y="180.06" />
+              <mxPoint x="1516.47" y="180.06" />
+              <mxPoint x="1516.47" y="213.47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-26" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-8" value="&lt;div style=&#39;text-align:center;&#39;&gt;5, 9a.2-9a.3, 10a.2-13a.3&lt;br/&gt;{rol=especialista}&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="819.94" />
+              <mxPoint x="820" y="819.94" />
+              <mxPoint x="820" y="150.06" />
+              <mxPoint x="2065.18" y="150.06" />
+              <mxPoint x="2065.18" y="213.47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-27" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#2563eb;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.68;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-9" value="&lt;div style=&#39;text-align:center;&#39;&gt;8a.2-8a.3, 16-17&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="849.94" />
+              <mxPoint x="850" y="849.94" />
+              <mxPoint x="850" y="120.06" />
+              <mxPoint x="2644" y="120.06" />
+              <mxPoint x="2644" y="213.47" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-28" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.78;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-15" value="&lt;div style=&#39;text-align:center;&#39;&gt;4, 9-11 y validaciones asociadas&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="670.04" y="930" />
+              <mxPoint x="790.04" y="930" />
+              <mxPoint x="790.04" y="1175.04" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-29" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.88;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-16" value="&lt;div style=&#39;text-align:center;&#39;&gt;14-15 {rol=familiar}&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="960" />
+              <mxPoint x="820" y="960" />
+              <mxPoint x="820" y="1268.25" />
+              <mxPoint x="1454.75" y="1268.25" />
+              <mxPoint x="1454.75" y="1175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-30" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.96;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-17" value="&lt;div style=&#39;text-align:center;&#39;&gt;12, 12a.1, 14-15 {rol=especialista}&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="989.94" />
+              <mxPoint x="850" y="989.94" />
+              <mxPoint x="850" y="1325" />
+              <mxPoint x="1863.76" y="1325" />
+              <mxPoint x="1863.76" y="1175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCTpu1rRiRM6G55OTpx4-31" edge="1" parent="1" source="KCTpu1rRiRM6G55OTpx4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KCTpu1rRiRM6G55OTpx4-18" value="&lt;div style=&#39;text-align:center;&#39;&gt;13, 13a.1, 15 {rol=especialista}&lt;/div&gt;">
+          <mxGeometry relative="1" y="18" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="1015" />
+              <mxPoint x="700" y="1015" />
+              <mxPoint x="700" y="1605.25" />
+              <mxPoint x="2437.87" y="1605.25" />
+              <mxPoint x="2437.87" y="1175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

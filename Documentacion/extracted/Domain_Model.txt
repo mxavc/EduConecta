@@ -1,0 +1,72 @@
+Usuario
+Nombres Completos
+Apellidos Completos
+numeroCedula
+correoElectronico
+Provincia
+Ciudad
+Padre de Familia
+Especialista
+RUC
+direccionDeAtencion
+Perfil Menor
+Nombres Completos
+Nombres Completos
+Apellidos Completos
+Cédula
+Edad
+Año Escolar
+Provincia
+Ciudad
+Diagnostico
+atiende
+Cita
+estado
+HistorialAtención
+Calendario
+0..*
+1
+agendar
+1
+usa
+1..*
+gestiona
+registra y representa
+1
+1..*
+recibe
+1
+0..*
+posee
+1
+0..*
+consulta
+Diponibilidad
+fecha
+hora
+estado
+establece
+1
+0...*
+CredencialProfesional
+tituloProfesional
+documentoDeRespaldo
+acredita
+1
+1...*
+Atencion
+observaciones
+informacionRelevante
+recomendaciones
+diagnostico
+indicacionesDeSeguimiento
+notasAdicionales
+genera
+1
+1...*
+es reservada por
+1
+0...*
+registra
+0...*
+1

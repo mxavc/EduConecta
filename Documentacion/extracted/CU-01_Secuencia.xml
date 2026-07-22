@@ -1,0 +1,362 @@
+
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=24;fontStyle=1;fontFamily=Helvetica;" value="CU-01: Iniciar Sesión — Diagrama de Secuencia de Diseño" vertex="1">
+          <mxGeometry height="34" width="1930" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c_2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#555555;fontFamily=Helvetica;" value="Java Dynamic Web Project · JSP (vista) · Servlet (controlador) · Service · DAO · Entidad (ORM/JPA) · numeración idéntica al caso de uso" vertex="1">
+          <mxGeometry height="22" width="1930" x="40" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="c_3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;" value="Usuario" vertex="1">
+          <mxGeometry height="55" width="30" x="95" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="c_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;FormularioInicioSesion" vertex="1">
+          <mxGeometry height="60" width="190" x="245" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=10;fontStyle=1;" value="«Servlet»&lt;br&gt;IniciarSesionControlador" vertex="1">
+          <mxGeometry height="60" width="190" x="475" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=10;fontStyle=1;" value="«Service»&lt;br&gt;AutenticacionService" vertex="1">
+          <mxGeometry height="60" width="190" x="705" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;UsuarioDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="935" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;fontStyle=1;" value="«Entity»&lt;br&gt;Usuario" vertex="1">
+          <mxGeometry height="60" width="190" x="1165" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;PaginaPrincipalFamiliar" vertex="1">
+          <mxGeometry height="60" width="190" x="1395" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;PaginaPrincipalEspecialista" vertex="1">
+          <mxGeometry height="60" width="190" x="1625" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_43" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="162" as="sourcePoint" />
+            <mxPoint x="110" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_44" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="162" as="sourcePoint" />
+            <mxPoint x="340" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_45" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1090" width="14" x="333" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="e_46" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="162" as="sourcePoint" />
+            <mxPoint x="570" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_47" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1578" width="14" x="563" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="e_48" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="162" as="sourcePoint" />
+            <mxPoint x="800" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_49" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1108" width="14" x="793" y="471" as="geometry" />
+        </mxCell>
+        <mxCell id="e_50" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="162" as="sourcePoint" />
+            <mxPoint x="1030" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_51" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="144" width="14" x="1023" y="779" as="geometry" />
+        </mxCell>
+        <mxCell id="e_52" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="162" as="sourcePoint" />
+            <mxPoint x="1260" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_53" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="680" width="14" x="1253" y="819" as="geometry" />
+        </mxCell>
+        <mxCell id="e_54" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1490" y="162" as="sourcePoint" />
+            <mxPoint x="1490" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_55" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="26" width="14" x="1483" y="1685" as="geometry" />
+        </mxCell>
+        <mxCell id="e_56" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="162" as="sourcePoint" />
+            <mxPoint x="1720" y="1897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_57" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="26" width="14" x="1713" y="1757" as="geometry" />
+        </mxCell>
+        <mxCell id="c_58" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="182" width="1878" x="4" y="1635" as="geometry" />
+        </mxCell>
+        <mxCell id="c_59" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="10. [rol == &quot;FAMILIAR&quot;]" vertex="1">
+          <mxGeometry height="24" width="700" x="104" y="1635" as="geometry" />
+        </mxCell>
+        <mxCell id="c_60" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="10. [rol == &quot;ESPECIALISTA&quot;]" vertex="1">
+          <mxGeometry height="24" width="700" x="104" y="1711" as="geometry" />
+        </mxCell>
+        <mxCell id="e_61" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4" y="1725" as="sourcePoint" />
+            <mxPoint x="1882" y="1725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_62" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="600" width="1850" x="18" y="1233" as="geometry" />
+        </mxCell>
+        <mxCell id="c_63" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="7a. Contraseña incorrecta [contrasenaValida == false]" vertex="1">
+          <mxGeometry height="24" width="700" x="118" y="1233" as="geometry" />
+        </mxCell>
+        <mxCell id="c_64" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[contrasenaValida == true]" vertex="1">
+          <mxGeometry height="24" width="700" x="118" y="1389" as="geometry" />
+        </mxCell>
+        <mxCell id="e_65" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="18" y="1403" as="sourcePoint" />
+            <mxPoint x="1868" y="1403" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_66" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="884" width="1822" x="32" y="965" as="geometry" />
+        </mxCell>
+        <mxCell id="c_67" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="6a. Cuenta no registrada [usuario == null]" vertex="1">
+          <mxGeometry height="24" width="700" x="132" y="965" as="geometry" />
+        </mxCell>
+        <mxCell id="c_68" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[usuario != null]" vertex="1">
+          <mxGeometry height="24" width="700" x="132" y="1121" as="geometry" />
+        </mxCell>
+        <mxCell id="e_69" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="32" y="1135" as="sourcePoint" />
+            <mxPoint x="1854" y="1135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_70" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="1328" width="1794" x="46" y="537" as="geometry" />
+        </mxCell>
+        <mxCell id="c_71" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="5a. Datos incompletos [camposCompletos == false]" vertex="1">
+          <mxGeometry height="24" width="700" x="146" y="537" as="geometry" />
+        </mxCell>
+        <mxCell id="c_72" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[camposCompletos == true]" vertex="1">
+          <mxGeometry height="24" width="700" x="146" y="693" as="geometry" />
+        </mxCell>
+        <mxCell id="e_73" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="46" y="707" as="sourcePoint" />
+            <mxPoint x="1840" y="707" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_11" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="1. solicitarIngreso(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="215" as="sourcePoint" />
+            <mxPoint x="570" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_12" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;rounded=0;verticalAlign=middle;align=left;fontSize=9;labelBackgroundColor=#FFFFFF;" value="ruteador(request:HttpServletRequest, response:HttpServletResponse): void">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="255" />
+              <mxPoint x="670" y="281" />
+            </Array>
+            <mxPoint x="575" y="255" as="sourcePoint" />
+            <mxPoint x="575" y="281" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_13" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="2. mostrarFormularioInicioSesion(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="309" as="sourcePoint" />
+            <mxPoint x="340" y="309" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_14" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="3. ingresarCredenciales(correo:String, contrasena:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="349" as="sourcePoint" />
+            <mxPoint x="570" y="349" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_15" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="4. confirmarIngreso(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="389" as="sourcePoint" />
+            <mxPoint x="570" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_16" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;rounded=0;verticalAlign=middle;align=left;fontSize=9;labelBackgroundColor=#FFFFFF;" value="ruteador(request:HttpServletRequest, response:HttpServletResponse): void">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="429" />
+              <mxPoint x="670" y="455" />
+            </Array>
+            <mxPoint x="575" y="429" as="sourcePoint" />
+            <mxPoint x="575" y="455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_17" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="5. verificarCamposObligatorios(correo:String, contrasena:String): boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="483" as="sourcePoint" />
+            <mxPoint x="800" y="483" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_18" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: camposCompletos:boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="523" as="sourcePoint" />
+            <mxPoint x="570" y="523" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_19" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9C4;strokeColor=#D6B656;align=left;fontSize=9;fontStyle=2;" value="5a.1. Identificar campos sin completar" vertex="1">
+          <mxGeometry height="30" width="340" x="70" y="591" as="geometry" />
+        </mxCell>
+        <mxCell id="e_20" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="5a.2. mostrarMensajeError(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="639" as="sourcePoint" />
+            <mxPoint x="340" y="639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_21" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="5a.3. mostrarFormularioInicioSesion(datosIngresados:Map): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="679" as="sourcePoint" />
+            <mxPoint x="340" y="679" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_22" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="6. buscarCuentaPorCorreo(correo:String): Usuario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="751" as="sourcePoint" />
+            <mxPoint x="800" y="751" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_23" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorCorreo(correo:String): Usuario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="791" as="sourcePoint" />
+            <mxPoint x="1030" y="791" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_24" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«query» SELECT u FROM Usuario u WHERE u.correoElectronico = :correo">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="831" as="sourcePoint" />
+            <mxPoint x="1260" y="831" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_25" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: usuario:Usuario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="871" as="sourcePoint" />
+            <mxPoint x="1030" y="871" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_26" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: usuario:Usuario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="911" as="sourcePoint" />
+            <mxPoint x="800" y="911" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_27" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: usuario:Usuario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="951" as="sourcePoint" />
+            <mxPoint x="570" y="951" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_28" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9C4;strokeColor=#D6B656;align=left;fontSize=9;fontStyle=2;" value="6a.1. Identificar cuenta inexistente" vertex="1">
+          <mxGeometry height="30" width="340" x="70" y="1019" as="geometry" />
+        </mxCell>
+        <mxCell id="e_29" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="6a.2. mostrarMensajeError(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1067" as="sourcePoint" />
+            <mxPoint x="340" y="1067" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_30" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="6a.3. mostrarFormularioInicioSesion(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1107" as="sourcePoint" />
+            <mxPoint x="340" y="1107" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_31" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7. comprobarContrasena(usuario:Usuario, contrasena:String): boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1179" as="sourcePoint" />
+            <mxPoint x="800" y="1179" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_32" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: contrasenaValida:boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1219" as="sourcePoint" />
+            <mxPoint x="570" y="1219" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_33" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9C4;strokeColor=#D6B656;align=left;fontSize=9;fontStyle=2;" value="7a.1. Identificar contraseña incorrecta" vertex="1">
+          <mxGeometry height="30" width="340" x="70" y="1287" as="geometry" />
+        </mxCell>
+        <mxCell id="e_34" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.2. mostrarMensajeError(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1335" as="sourcePoint" />
+            <mxPoint x="340" y="1335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_35" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.3. mostrarFormularioInicioSesion(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1375" as="sourcePoint" />
+            <mxPoint x="340" y="1375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_36" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="8. getRol(): String">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1447" as="sourcePoint" />
+            <mxPoint x="1260" y="1447" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_37" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: rol:String">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="1487" as="sourcePoint" />
+            <mxPoint x="570" y="1487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_38" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="9. obtenerDatosSesion(usuario:Usuario): Usuario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1527" as="sourcePoint" />
+            <mxPoint x="800" y="1527" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_39" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: usuarioSesion:Usuario">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="1567" as="sourcePoint" />
+            <mxPoint x="570" y="1567" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_40" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;rounded=0;verticalAlign=middle;align=left;fontSize=9;labelBackgroundColor=#FFFFFF;" value="crearSesion(usuarioSesion:Usuario): void">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="1607" />
+              <mxPoint x="670" y="1633" />
+            </Array>
+            <mxPoint x="575" y="1607" as="sourcePoint" />
+            <mxPoint x="575" y="1633" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_41" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10. mostrarPaginaPrincipalFamiliar(usuarioSesion:Usuario): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1697" as="sourcePoint" />
+            <mxPoint x="1490" y="1697" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_42" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10. mostrarPaginaPrincipalEspecialista(usuarioSesion:Usuario): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1769" as="sourcePoint" />
+            <mxPoint x="1720" y="1769" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

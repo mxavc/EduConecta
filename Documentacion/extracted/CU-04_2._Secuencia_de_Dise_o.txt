@@ -1,0 +1,84 @@
+CU-04 Agendar Cita — Diagrama de Secuencia de Diseño
+Familiar
+«JSP» PaginaPrincipalFamiliar
+«JSP» ListaDeEspecialistas
+«JSP» InformacionEspecialista
+«JSP» FormularioAgendamientoCita
+«Servlet» AgendarCitaControlador
+«Service» CitaService
+«DAO» EspecialistaDAO
+«DAO» PerfilMenorDAO
+«DAO» CalendarioDAO
+«DAO» CitaDAO
+«Entity» Calendario
+«Entity» Cita
+ALT: 6a. Campos vacíos [existenCamposVacios == true]
+ALT: 6b. Fecha no válida [fechaValida == false]
+ALT: 6c. Horario no disponible [horarioDisponible == false]
+ALT: 7a. Cancelar agendamiento [confirmacion == false]
+ALT: [confirmacion == true]
+ALT: [horarioDisponible == true]
+ALT: [fechaValida == true]
+ALT: [existenCamposVacios == false]
+listarEspecialistas(): void
+ruteador(request:HttpServletRe quest, response:HttpServletResponse): void
+listarEspecialistas(): List
+buscarTodos(): List
+return: especialistas:List
+return: especialistas:List
+mostrarPaginaPrincipalFamiliar(citas:List ): void
+mostrarEspecialistas(especialistas:List ): void
+seleccionarEspecialista(idEspecialista:int): void
+obtenerEspecialista(idEspecialista:int): void
+obtenerEspecialista(idEspecialista:int): Especialista
+buscarPorId(idEspecialista:int): Especialista
+return: especialista:Especialista
+return: especialista:Especialista
+mostrarInformacionEspecialista(especialista:Especialista): void
+solicitarAgendamientoCita(idEspecialista:int): void
+mostrarFormularioAgendamiento(idEspecialista:int): void
+listarPerfilesMenores(idFamiliar:int): List
+buscarPorFamiliar(idFamiliar:int): List
+return: perfilesMenores:List
+return: perfilesMenores:List
+obtenerHorariosDisponibles(idEspecialista:i nt, fechaInicio:Date, fechaFin:Date): List
+buscarDisponibilidad(idEspecialista:int, fechaInicio:Date, fechaFin:Date): List
+> Calendario(): Calendario
+return: disponibilidad:List
+return: disponibilidad:List
+return: disponibilidad:List
+mostrarFormularioAgendamiento(perfilesMenores:Lis t , disponibilidad:List ): void
+agendarCita(idPerfilMenor:int, fecha:Date, hora:Time): void
+registrarCita(idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): void
+validarCamposVacios(idPerfilMenor:int, fecha:Date, hora:Time): boolean
+return: existenCamposVacios:boolean
+mostrarMensajeError(mensaje:String): void
+validarRangoFecha(fecha:Date): boolean
+return: fechaValida:boolean
+mostrarMensajeError(mensaje:String): void
+verificarDisponibilidad(idEspecialista:int, fecha:Date, hora:Time): boolean
+existeDisponibilidad(idEspecialista:int, fecha:Date, hora:Time): boolean
+return: horarioDisponible:boolean
+return: horarioDisponible:boolean
+actualizarCalendario(disponibilidad:List io>): void
+mostrarMensajeError(mensaje:String): void
+mostrarMensajeConfirmacion(mensaje:String): void
+cancelarAgendamiento(): void
+cancelarAgendamiento(): void
+mostrarPaginaPrincipalFamiliar(citas:List ): void
+confirmarAgendamiento(): void
+confirmarAgendamiento(idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): void
+agendarCita(idFamiliar:int, idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): Cita
+> Cita(fecha:Date, hora:Time): Cita
+return: cita:Cita
+insertar(cita:Cita): Cita
+return: cita:Cita
+bloquearHorario(idEspecialista:int, fecha:Date, hora:Time): void
+return: cita:Cita
+listarCitasFamiliar(idFamiliar:int): List
+buscarPorFamiliar(idFamiliar:int): List
+return: citas:List
+return: citas:List
+mostrarMensajeExito(mensaje:String): void
+mostrarPaginaPrincipalFamiliar(citas:List ): void
+Leyenda de capas ■ Vista (JSP) ■ Controlador (Servlet) ■ Servicio ■ DAO ■ Entidad (ORM/JPA)

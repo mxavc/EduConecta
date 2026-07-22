@@ -1,0 +1,35 @@
+CU-01: Iniciar Sesión — Diagrama de Clases de Diseño
+Métodos tomados del Diagrama de Secuencia de Diseño · sin vistas JSP · capas: Servlet (rojo) · Service (azul) · DAO (morado) · Entidad (amarillo)
+«Servlet» IniciarSesionControlador
+- autenticacionService: AutenticacionService
++ doGet(request:HttpServletRequest, response:HttpServletResponse): void
++ doPost(request:HttpServletRequest, response:HttpServletResponse): void
+- ruteador(request:HttpServletRequest, response:HttpServletResponse): void
++ solicitarIngreso(): void
++ ingresarCredenciales(correo:String, contrasena:String): void
++ confirmarIngreso(): void
+- crearSesion(usuarioSesion:Usuario): void
+«Service» AutenticacionService
+- usuarioDAO: UsuarioDAO
++ verificarCamposObligatorios(correo:String, contrasena:String): boolean
++ buscarCuentaPorCorreo(correo:String): Usuario
++ comprobarContrasena(usuario:Usuario, contrasena:String): boolean
++ obtenerDatosSesion(usuario:Usuario): Usuario
+«DAO» UsuarioDAO
+- em: EntityManager
++ buscarPorCorreo(correo:String): Usuario
+«Entity» Usuario
+- id: int
+- nombresCompletos: String
+- apellidosCompletos: String
+- numeroCedula: String
+- correoElectronico: String
+- provincia: String
+- ciudad: String
+- contrasena: String
+- rol: String
++ getRol(): String
++ getCorreoElectronico(): String
+usa
+usa
+consulta (ORM)

@@ -1,0 +1,317 @@
+
+    <mxGraphModel dx="2289" dy="2015" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=20;fontColor=#000000;fontStyle=1;" value="CU-04 Agendar Cita — Diagrama de Clases de Diseño" vertex="1">
+          <mxGeometry height="34" width="1200" x="45" y="-63" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=13;fontColor=#b85450;fontStyle=1;" value="Capa de Control (Servlets)" vertex="1">
+          <mxGeometry height="26" width="566" x="57" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cl21" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#f8cecc;strokeColor=#b85450;" value="&amp;laquo;Servlet&amp;raquo;&lt;br&gt;AgendarCitaControlador" vertex="1">
+          <mxGeometry height="294" width="566" x="57" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- citaService: CitaService" vertex="1">
+          <mxGeometry height="24" width="566" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="cl21" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="566" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ doGet(request:HttpServletRequest, response:HttpServletResponse): void" vertex="1">
+          <mxGeometry height="24" width="566" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ doPost(request:HttpServletRequest, response:HttpServletResponse): void" vertex="1">
+          <mxGeometry height="24" width="566" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- ruteador(request:HttpServletRequest, response:HttpServletResponse): void" vertex="1">
+          <mxGeometry height="24" width="566" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ listarEspecialistas(): void" vertex="1">
+          <mxGeometry height="24" width="566" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ obtenerEspecialista(idEspecialista:int): void" vertex="1">
+          <mxGeometry height="24" width="566" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ mostrarFormularioAgendamiento(idEspecialista:int): void" vertex="1">
+          <mxGeometry height="24" width="566" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ registrarCita(idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): void" vertex="1">
+          <mxGeometry height="24" width="566" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ confirmarAgendamiento(idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): void" vertex="1">
+          <mxGeometry height="24" width="566" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="cl21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ cancelarAgendamiento(): void" vertex="1">
+          <mxGeometry height="24" width="566" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=13;fontColor=#6c8ebf;fontStyle=1;" value="Capa de Servicio" vertex="1">
+          <mxGeometry height="26" width="613" x="753" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cl34" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&amp;laquo;Service&amp;raquo;&lt;br&gt;CitaService" vertex="1">
+          <mxGeometry height="366" width="613" x="753" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- especialistaDAO: EspecialistaDAO" vertex="1">
+          <mxGeometry height="24" width="613" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- perfilMenorDAO: PerfilMenorDAO" vertex="1">
+          <mxGeometry height="24" width="613" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- calendarioDAO: CalendarioDAO" vertex="1">
+          <mxGeometry height="24" width="613" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- citaDAO: CitaDAO" vertex="1">
+          <mxGeometry height="24" width="613" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" parent="cl34" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="613" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ listarEspecialistas(): List&lt;Especialista&gt;" vertex="1">
+          <mxGeometry height="24" width="613" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ obtenerEspecialista(idEspecialista:int): Especialista" vertex="1">
+          <mxGeometry height="24" width="613" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ listarPerfilesMenores(idFamiliar:int): List&lt;PerfilMenor&gt;" vertex="1">
+          <mxGeometry height="24" width="613" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ obtenerHorariosDisponibles(idEspecialista:int, fechaInicio:Date, fechaFin:Date): List&lt;Calendario&gt;" vertex="1">
+          <mxGeometry height="24" width="613" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ validarCamposVacios(idPerfilMenor:int, fecha:Date, hora:Time): boolean" vertex="1">
+          <mxGeometry height="24" width="613" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ validarRangoFecha(fecha:Date): boolean" vertex="1">
+          <mxGeometry height="24" width="613" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ verificarDisponibilidad(idEspecialista:int, fecha:Date, hora:Time): boolean" vertex="1">
+          <mxGeometry height="24" width="613" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ agendarCita(idFamiliar:int, idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): Cita" vertex="1">
+          <mxGeometry height="24" width="613" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" parent="cl34" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ listarCitasFamiliar(idFamiliar:int): List&lt;Cita&gt;" vertex="1">
+          <mxGeometry height="24" width="613" y="342" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=13;fontColor=#9673a6;fontStyle=1;" value="Capa de Acceso a Datos (DAO)" vertex="1">
+          <mxGeometry height="26" width="578" x="1496" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cl50" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&amp;laquo;DAO&amp;raquo;&lt;br&gt;EspecialistaDAO" vertex="1">
+          <mxGeometry height="126" width="578" x="1496" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" parent="cl50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- em: EntityManager" vertex="1">
+          <mxGeometry height="24" width="578" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" parent="cl50" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="578" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" parent="cl50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ buscarTodos(): List&lt;Especialista&gt;" vertex="1">
+          <mxGeometry height="24" width="578" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" parent="cl50" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ buscarPorId(idEspecialista:int): Especialista" vertex="1">
+          <mxGeometry height="24" width="578" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="cl55" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&amp;laquo;DAO&amp;raquo;&lt;br&gt;PerfilMenorDAO" vertex="1">
+          <mxGeometry height="102" width="578" x="1496" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" parent="cl55" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- em: EntityManager" vertex="1">
+          <mxGeometry height="24" width="578" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" parent="cl55" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="578" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" parent="cl55" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ buscarPorFamiliar(idFamiliar:int): List&lt;PerfilMenor&gt;" vertex="1">
+          <mxGeometry height="24" width="578" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="cl59" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&amp;laquo;DAO&amp;raquo;&lt;br&gt;CalendarioDAO" vertex="1">
+          <mxGeometry height="150" width="578" x="1496" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="c60" parent="cl59" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- em: EntityManager" vertex="1">
+          <mxGeometry height="24" width="578" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" parent="cl59" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="578" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c62" parent="cl59" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ buscarDisponibilidad(idEspecialista:int, fechaInicio:Date, fechaFin:Date): List&lt;Calendario&gt;" vertex="1">
+          <mxGeometry height="24" width="578" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" parent="cl59" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ existeDisponibilidad(idEspecialista:int, fecha:Date, hora:Time): boolean" vertex="1">
+          <mxGeometry height="24" width="578" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" parent="cl59" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ bloquearHorario(idEspecialista:int, fecha:Date, hora:Time): void" vertex="1">
+          <mxGeometry height="24" width="578" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="cl65" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&amp;laquo;DAO&amp;raquo;&lt;br&gt;CitaDAO" vertex="1">
+          <mxGeometry height="126" width="578" x="1496" y="608" as="geometry" />
+        </mxCell>
+        <mxCell id="c66" parent="cl65" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- em: EntityManager" vertex="1">
+          <mxGeometry height="24" width="578" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c67" parent="cl65" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="578" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c68" parent="cl65" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ insertar(cita:Cita): Cita" vertex="1">
+          <mxGeometry height="24" width="578" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="c69" parent="cl65" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ buscarPorFamiliar(idFamiliar:int): List&lt;Cita&gt;" vertex="1">
+          <mxGeometry height="24" width="578" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="c70" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=13;fontColor=#d6b656;fontStyle=1;" value="Capa de Dominio (Entidades ORM/JPA)" vertex="1">
+          <mxGeometry height="26" width="209" x="2204" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="cl71" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&amp;laquo;Entity&amp;raquo;&lt;br&gt;Cita" vertex="1">
+          <mxGeometry height="294" width="209" x="2204" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c72" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- id: int" vertex="1">
+          <mxGeometry height="24" width="209" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c73" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- fecha: Date" vertex="1">
+          <mxGeometry height="24" width="209" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c74" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- hora: Time" vertex="1">
+          <mxGeometry height="24" width="209" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c75" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- estado: String" vertex="1">
+          <mxGeometry height="24" width="209" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="c76" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- familiar: Familiar" vertex="1">
+          <mxGeometry height="24" width="209" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="c77" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- perfilMenor: PerfilMenor" vertex="1">
+          <mxGeometry height="24" width="209" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="c78" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- especialista: Especialista" vertex="1">
+          <mxGeometry height="24" width="209" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c79" parent="cl71" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="209" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="c80" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ Cita(fecha:Date, hora:Time)" vertex="1">
+          <mxGeometry height="24" width="209" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="c81" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ getFecha(): Date" vertex="1">
+          <mxGeometry height="24" width="209" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="c82" parent="cl71" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ getHora(): Time" vertex="1">
+          <mxGeometry height="24" width="209" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="cl83" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&amp;laquo;Entity&amp;raquo;&lt;br&gt;Calendario" vertex="1">
+          <mxGeometry height="222" width="209" x="2204" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="c84" parent="cl83" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- id: int" vertex="1">
+          <mxGeometry height="24" width="209" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c85" parent="cl83" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- fecha: Date" vertex="1">
+          <mxGeometry height="24" width="209" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c86" parent="cl83" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- hora: Time" vertex="1">
+          <mxGeometry height="24" width="209" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c87" parent="cl83" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- disponible: boolean" vertex="1">
+          <mxGeometry height="24" width="209" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="c88" parent="cl83" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- especialista: Especialista" vertex="1">
+          <mxGeometry height="24" width="209" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="c89" parent="cl83" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="209" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="c90" parent="cl83" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ Calendario()" vertex="1">
+          <mxGeometry height="24" width="209" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c91" parent="cl83" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ isDisponible(): boolean" vertex="1">
+          <mxGeometry height="24" width="209" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="cl92" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&amp;laquo;Entity&amp;raquo;&lt;br&gt;Especialista" vertex="1">
+          <mxGeometry height="150" width="209" x="2204" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c93" parent="cl92" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- ruc: String" vertex="1">
+          <mxGeometry height="24" width="209" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c94" parent="cl92" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- direccion: String" vertex="1">
+          <mxGeometry height="24" width="209" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c95" parent="cl92" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- titulosProfesionales: String" vertex="1">
+          <mxGeometry height="24" width="209" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c96" parent="cl92" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="209" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="c97" parent="cl92" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ Especialista()" vertex="1">
+          <mxGeometry height="24" width="209" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="cl98" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=46;horizontalStack=0;resizeParent=1;resizeParentMax=0;html=1;whiteSpace=wrap;strokeColor=#000000;fillColor=#ffffff;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="&amp;laquo;Entity&amp;raquo;&lt;br&gt;PerfilMenor" vertex="1">
+          <mxGeometry height="174" width="209" x="2204" y="896" as="geometry" />
+        </mxCell>
+        <mxCell id="c99" parent="cl98" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- id: int" vertex="1">
+          <mxGeometry height="24" width="209" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="c100" parent="cl98" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- nombresCompletos: String" vertex="1">
+          <mxGeometry height="24" width="209" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c101" parent="cl98" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- cedula: String" vertex="1">
+          <mxGeometry height="24" width="209" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c102" parent="cl98" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="- familiar: Familiar" vertex="1">
+          <mxGeometry height="24" width="209" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="c103" parent="cl98" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#000000;html=1;" value="" vertex="1">
+          <mxGeometry height="8" width="209" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="c104" parent="cl98" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" value="+ PerfilMenor()" vertex="1">
+          <mxGeometry height="24" width="209" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="e109" edge="1" parent="1" source="cl21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.500;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl34" value="usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e110" edge="1" parent="1" source="cl34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.200;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl50" value="usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e111" edge="1" parent="1" source="cl34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.400;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl55" value="usa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="238.41" />
+              <mxPoint x="1450" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e112" edge="1" parent="1" source="cl34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.600;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl59" value="usa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e113" edge="1" parent="1" source="cl34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.800;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl65" value="usa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1408.24" y="384.8" />
+              <mxPoint x="1408.24" y="671" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e114" edge="1" parent="1" source="cl65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.500;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl71" value="gestiona">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2120" y="671.04" />
+              <mxPoint x="2120" y="239.04" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e115" edge="1" parent="1" source="cl59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.500;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl83" value="gestiona">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2074" y="543" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e116" edge="1" parent="1" source="cl50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.500;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl92" value="gestiona">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2166.2" y="155" />
+              <mxPoint x="2166.2" y="775" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e117" edge="1" parent="1" source="cl55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#000000;fontSize=11;jumpStyle=arc;exitX=1;exitY=0.500;exitDx=0;exitDy=0;entryX=0;entryY=0.500;entryDx=0;entryDy=0;" target="cl98" value="gestiona">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

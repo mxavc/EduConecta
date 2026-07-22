@@ -1,0 +1,107 @@
+CU-02: Registrar Usuario — Diagrama de Secuencia de Diseño
+Java Dynamic Web Project · JSP (vista) · Servlet (controlador) · Service · DAO · Entidad (ORM/JPA) · numeración idéntica al caso de uso
+Familiar / Especialista
+«JSP» SeleccionTipoCuenta
+«JSP» FormularioRegistroFamiliar
+«JSP» FormularioRegistroEspecialista
+«JSP» FormularioInicioSesion
+«Servlet» RegistrarUsuarioControlador
+«Service» RegistroUsuarioService
+«DAO» UsuarioDAO
+«DAO» FamiliarDAO
+«DAO» EspecialistaDAO
+«DAO» CredencialProfesionalDAO
+«Entity» Familiar
+«Entity» Especialista
+«Entity» CredencialProfesional
+alt
+5. [tipoCuenta == "FAMILIAR"]
+5. [tipoCuenta == "ESPECIALISTA"]
+alt
+13a. Documentos no cargados [documentosCargados == false]
+[documentosCargados == true]
+alt
+12a. RUC registrado [rucRegistrado == true]
+[rucRegistrado == false]
+alt
+12-13. [tipoCuenta == "ESPECIALISTA"]
+12-13. [tipoCuenta == "FAMILIAR"]
+alt
+11a. Número de cédula registrado [cedulaRegistrada == true]
+[cedulaRegistrada == false]
+alt
+10a. Correo electrónico registrado [correoRegistrado == true]
+[correoRegistrado == false]
+alt
+9a. Información incompleta o no válida [datosValidos == false]
+[datosValidos == true]
+alt
+8a. Cancelar registro [confirmacion == false]
+[confirmacion == true]
+1. solicitarRegistro(): void
+ruteador(request:HttpServletRequest, response:HttpServletResponse): void
+2. mostrarTiposCuenta(): void
+3. seleccionarTipoCuenta(tipoCuenta:String): void
+4. obtenerDatosRequeridos(tipoCuenta:String): List
+return: camposRequeridos:List
+5. mostrarFormularioRegistroFamiliar(camposRequeridos:List ): void
+6. completarInformacion(nombres:String, apellidos:String, cedula:String, correo:String, provincia:String, ciudad:String, contrasena:String): void
+5. mostrarFormularioRegistroEspecialista(camposRequeridos:List ): void
+6. completarInformacion(nombres:String, apellidos:String, cedula:String, ruc:String, correo:String, provincia:String, ciudad:String, direccionDeAtencion:String, titulos:List , contrasena:String): void
+7. cargarDocumentos(documentos:List ): void
+8a.1. cancelarRegistro(): void
+8a.2. descartarDatosNoConfirmados(): void
+8a.3. mostrarFormularioInicioSesion(): void
+8. confirmarRegistro(): void
+9. verificarCamposYFormato(datos:Map): boolean
+return: datosValidos:boolean
+9a.1. Identificar campos incompletos o formato no válido
+9a.2. mostrarMensajeError(mensaje:String): void
+9a.3. mostrarFormularioRegistroFamiliar(datosIngresados:Map): void
+10. verificarCorreoNoRegistrado(correo:String): boolean
+existeCorreo(correo:String): boolean
+return: existe:boolean
+return: correoRegistrado:boolean
+10a.1. Identificar correo perteneciente a otra cuenta
+10a.2. mostrarMensajeError(mensaje:String): void
+10a.3. mostrarFormularioRegistroFamiliar(datosIngresados:Map): void
+11. verificarCedulaNoRegistrada(cedula:String): boolean
+existeCedula(cedula:String): boolean
+return: existe:boolean
+return: cedulaRegistrada:boolean
+11a.1. Identificar cédula perteneciente a otra cuenta
+11a.2. mostrarMensajeError(mensaje:String): void
+11a.3. mostrarFormularioRegistroFamiliar(datosIngresados:Map): void
+12. verificarRucNoRegistrado(ruc:String): boolean
+existeRuc(ruc:String): boolean
+return: existe:boolean
+return: rucRegistrado:boolean
+12a.1. Identificar RUC perteneciente a otro Especialista
+12a.2. mostrarMensajeError(mensaje:String): void
+12a.3. mostrarFormularioRegistroEspecialista(datosIngresados:Map): void
+13. verificarDocumentosCargados(documentos:List ): boolean
+return: documentosCargados:boolean
+13a.1. Identificar documentos no cargados
+13a.2. mostrarMensajeError(mensaje:String): void
+13a.3. mostrarFormularioRegistroEspecialista(datosIngresados:Map): void
+14. crearCuenta(tipoCuenta:String, datos:Map): Especialista
+«create» Especialista(nombres, apellidos, cedula, ruc, correo, provincia, ciudad, direccionDeAtencion, contrasena)
+return: especialista:Especialista
+return: especialista:Especialista
+15. registrarInformacion(especialista:Especialista, credenciales:List ): void
+insertar(especialista:Especialista): Especialista
+«persist» em.persist(especialista)
+«create» CredencialProfesional(tituloProfesional:String, documentoDeRespaldo:String) [por cada documento]
+insertar(credencial:CredencialProfesional): CredencialProfesional [por cada documento]
+«persist» em.persist(credencial)
+16. mostrarMensajeExito(mensaje:String): void
+17. mostrarFormularioInicioSesion(): void
+14. crearCuenta(tipoCuenta:String, datos:Map): Familiar
+«create» Familiar(nombres, apellidos, cedula, correo, provincia, ciudad, contrasena)
+return: familiar:Familiar
+return: familiar:Familiar
+15. registrarInformacion(familiar:Familiar): void
+insertar(familiar:Familiar): Familiar
+«persist» em.persist(familiar)
+16. mostrarMensajeExito(mensaje:String): void
+17. mostrarFormularioInicioSesion(): void

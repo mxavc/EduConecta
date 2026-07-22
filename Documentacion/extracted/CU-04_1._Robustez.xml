@@ -1,0 +1,154 @@
+
+    <mxGraphModel dx="4120" dy="2140" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=26;fontStyle=1;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Diagrama de robustez — CU-04 Agendar Cita&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="1100" x="50" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-5" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#ebf8ff;swimlaneFillColor=#bee3f8;strokeColor=#3182ce;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Interfaces «boundary»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="610" width="4050" x="940" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-70" parent="hJ-Tb1EuEayqceOQkaG1-5" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Página principal&lt;br&gt;del Familiar" vertex="1">
+          <mxGeometry height="107" width="212" x="239" y="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-71" parent="hJ-Tb1EuEayqceOQkaG1-5" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Lista de&lt;br&gt;Especialistas" vertex="1">
+          <mxGeometry height="105" width="208" x="788" y="247.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-72" parent="hJ-Tb1EuEayqceOQkaG1-5" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Información del&lt;br&gt;Especialista" vertex="1">
+          <mxGeometry height="97" width="209" x="1556" y="121" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-73" parent="hJ-Tb1EuEayqceOQkaG1-5" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Formulario de&lt;br&gt;agendamiento de cita" vertex="1">
+          <mxGeometry height="107" width="210" x="2271" y="121" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-74" parent="hJ-Tb1EuEayqceOQkaG1-5" style="shape=umlBoundary;whiteSpace=wrap;html=1;" value="Sección&lt;br&gt;Mis citas" vertex="1">
+          <mxGeometry height="113" width="216" x="2894" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-11" parent="1" style="swimlane;html=1;rounded=1;horizontal=1;startSize=40;fillColor=#f0fff4;swimlaneFillColor=#c6f6d5;strokeColor=#38a169;fontStyle=1;fontSize=16;fontFamily=Helvetica;" value="&lt;div style=&#39;text-align:center;&#39;&gt;Entidades del dominio «entity»&lt;/div&gt;" vertex="1">
+          <mxGeometry height="520" width="4050" x="940" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="8ysmpecA9_xjKw8-XaxJ-2" edge="1" parent="hJ-Tb1EuEayqceOQkaG1-11" source="hJ-Tb1EuEayqceOQkaG1-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hJ-Tb1EuEayqceOQkaG1-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-66" parent="hJ-Tb1EuEayqceOQkaG1-11" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;br&gt;Especialista&lt;/div&gt;" vertex="1">
+          <mxGeometry height="102" width="111" x="329" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-67" parent="hJ-Tb1EuEayqceOQkaG1-11" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align:center;&quot;&gt;&lt;br&gt;Disponibilidad&lt;/div&gt;" vertex="1">
+          <mxGeometry height="144" width="157" x="878" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-68" parent="hJ-Tb1EuEayqceOQkaG1-11" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align:center;&quot;&gt;PerfilMenor&lt;/div&gt;" vertex="1">
+          <mxGeometry height="152" width="161" x="1298" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-69" parent="hJ-Tb1EuEayqceOQkaG1-11" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" value="Cita" vertex="1">
+          <mxGeometry height="199" width="217" x="1612" y="157.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-16" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#4a5568;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.011;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;" target="hJ-Tb1EuEayqceOQkaG1-64" value="&lt;div style=&quot;text-align:center;&quot;&gt;1. Ingresar&lt;br&gt;3. Consultar especialistas&lt;br&gt;6. Seleccionar especialista (especialista)&lt;br&gt;10. Solicitar agendamiento&lt;br&gt;13. Registrar cita (menor, fecha, hora)&lt;br&gt;13a.1. Cancelar agendamiento&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0485" y="49" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="130" y="750" as="sourcePoint" />
+            <mxPoint x="430" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-17" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2b6cb0;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.18;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="&lt;div style=&#39;text-align:center;&#39;&gt;2. Mostrar página principal del Familiar&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="690" />
+              <mxPoint x="800" y="300" />
+              <mxPoint x="1060" y="300" />
+            </Array>
+            <mxPoint x="710" y="692.3999999999999" as="sourcePoint" />
+            <mxPoint x="1181" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-18" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2b6cb0;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.32;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="&lt;div style=&quot;text-align:center;&quot;&gt;5. Mostrar lista de especialistas&lt;br&gt;(especialistas)&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="835" y="720" />
+              <mxPoint x="835" y="430" />
+              <mxPoint x="1730" y="430" />
+              <mxPoint x="1730" y="300" />
+            </Array>
+            <mxPoint x="710" y="717.6000000000001" as="sourcePoint" />
+            <mxPoint x="1730" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-19" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2b6cb0;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.46;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="&lt;div style=&#39;text-align:center;&#39;&gt;9. Mostrar información y horarios del&lt;br&gt;especialista (especialista, horarios)&lt;br&gt;13a.2. Mostrar información del especialista&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="750" />
+              <mxPoint x="870" y="500" />
+              <mxPoint x="2420" y="500" />
+              <mxPoint x="2420" y="300" />
+            </Array>
+            <mxPoint x="710" y="742.8" as="sourcePoint" />
+            <mxPoint x="2498" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-20" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2b6cb0;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.62;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="&lt;div style=&quot;text-align:center;&quot;&gt;12. Mostrar formulario de agendamiento&lt;br&gt;(perfiles, horarios)&lt;br&gt;14a.2. Mostrar mensaje: datos incompletos&lt;br&gt;o fecha no válida&lt;br&gt;14b.2. Mostrar mensaje: horario no disponible&lt;br&gt;14b.3. Actualizar horarios (horarios)&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="905" y="780" />
+              <mxPoint x="905" y="575" />
+              <mxPoint x="3170" y="575" />
+              <mxPoint x="3170" y="305" />
+            </Array>
+            <mxPoint x="710" y="771.6000000000001" as="sourcePoint" />
+            <mxPoint x="3211" y="306" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-21" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2b6cb0;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.78;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="&lt;div style=&#39;text-align:center;&#39;&gt;17. Mostrar mensaje: «Cita agendada con éxito»&lt;br&gt;18. Mostrar cita registrada (citas)&lt;/div&gt;">
+          <mxGeometry relative="1" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="810" />
+              <mxPoint x="940" y="650" />
+              <mxPoint x="3950" y="650" />
+              <mxPoint x="3950" y="300" />
+            </Array>
+            <mxPoint x="710" y="800.3999999999999" as="sourcePoint" />
+            <mxPoint x="3950" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-22" edge="1" parent="1" style="rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2f855a;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hJ-Tb1EuEayqceOQkaG1-66" value="&lt;div style=&quot;text-align:center;&quot;&gt;4. Obtener especialistas disponibles&lt;br&gt;7. Obtener información del especialista&lt;br&gt;(especialista)&lt;/div&gt;&lt;div style=&quot;text-align:center;&quot;&gt;8. Obtener horarios disponibles (especialista)&lt;br&gt;14. Verificar disponibilidad (fecha, hora)&lt;br&gt;15. Reservar disponibilidad&lt;/div&gt;">
+          <mxGeometry relative="1" x="-0.0584" y="24" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="710" y="1157" />
+            </Array>
+            <mxPoint x="710" y="786" as="sourcePoint" />
+            <mxPoint x="1200" y="1165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-24" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2f855a;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.88;exitDx=0;exitDy=0;" target="hJ-Tb1EuEayqceOQkaG1-68" value="&lt;div style=&#39;text-align:center;&#39;&gt;11. Obtener perfiles del familiar (familiar)&lt;/div&gt;">
+          <mxGeometry relative="1" y="16" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="890" />
+              <mxPoint x="880" y="890" />
+              <mxPoint x="880" y="1350" />
+              <mxPoint x="2471.2" y="1350" />
+              <mxPoint x="2471.2" y="1132" />
+            </Array>
+            <mxPoint x="710" y="818.3999999999999" as="sourcePoint" />
+            <mxPoint x="2940" y="1165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-25" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=32;html=1;endArrow=block;endFill=1;strokeWidth=1.45;strokeColor=#2f855a;fontSize=11;fontFamily=Helvetica;labelBackgroundColor=#ffffff;exitX=1;exitY=0.95;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="hJ-Tb1EuEayqceOQkaG1-69" value="&lt;div style=&#39;text-align:center;&#39;&gt;16. Registrar cita (familiar, menor,&lt;br&gt;especialista, disponibilidad)&lt;/div&gt;">
+          <mxGeometry relative="1" y="16" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="915" />
+              <mxPoint x="910" y="915" />
+              <mxPoint x="910" y="1435" />
+              <mxPoint x="2660.6" y="1435" />
+            </Array>
+            <mxPoint x="710" y="831" as="sourcePoint" />
+            <mxPoint x="3810.0000000000255" y="1165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-63" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Familiar" vertex="1">
+          <mxGeometry height="60" width="30" x="105" y="717" as="geometry" />
+        </mxCell>
+        <mxCell id="hJ-Tb1EuEayqceOQkaG1-64" parent="1" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" value="AgendarCita&lt;br&gt;Controlador" vertex="1">
+          <mxGeometry height="244" width="235" x="496" y="612" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

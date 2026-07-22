@@ -1,0 +1,85 @@
+CU-04 Agendar Cita — Diagrama de Clases de Diseño
+Capa de Control (Servlets)
+«Servlet» AgendarCitaControlador
+- citaService: CitaService
++ doGet(request:HttpServletRequest, response:HttpServletResponse): void
++ doPost(request:HttpServletRequest, response:HttpServletResponse): void
+- ruteador(request:HttpServletRequest, response:HttpServletResponse): void
++ listarEspecialistas(): void
++ obtenerEspecialista(idEspecialista:int): void
++ mostrarFormularioAgendamiento(idEspecialista:int): void
++ registrarCita(idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): void
++ confirmarAgendamiento(idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): void
++ cancelarAgendamiento(): void
+Capa de Servicio
+«Service» CitaService
+- especialistaDAO: EspecialistaDAO
+- perfilMenorDAO: PerfilMenorDAO
+- calendarioDAO: CalendarioDAO
+- citaDAO: CitaDAO
++ listarEspecialistas(): List
++ obtenerEspecialista(idEspecialista:int): Especialista
++ listarPerfilesMenores(idFamiliar:int): List
++ obtenerHorariosDisponibles(idEspecialista:int, fechaInicio:Date, fechaFin:Date): List
++ validarCamposVacios(idPerfilMenor:int, fecha:Date, hora:Time): boolean
++ validarRangoFecha(fecha:Date): boolean
++ verificarDisponibilidad(idEspecialista:int, fecha:Date, hora:Time): boolean
++ agendarCita(idFamiliar:int, idPerfilMenor:int, idEspecialista:int, fecha:Date, hora:Time): Cita
++ listarCitasFamiliar(idFamiliar:int): List
+Capa de Acceso a Datos (DAO)
+«DAO» EspecialistaDAO
+- em: EntityManager
++ buscarTodos(): List
++ buscarPorId(idEspecialista:int): Especialista
+«DAO» PerfilMenorDAO
+- em: EntityManager
++ buscarPorFamiliar(idFamiliar:int): List
+«DAO» CalendarioDAO
+- em: EntityManager
++ buscarDisponibilidad(idEspecialista:int, fechaInicio:Date, fechaFin:Date): List
++ existeDisponibilidad(idEspecialista:int, fecha:Date, hora:Time): boolean
++ bloquearHorario(idEspecialista:int, fecha:Date, hora:Time): void
+«DAO» CitaDAO
+- em: EntityManager
++ insertar(cita:Cita): Cita
++ buscarPorFamiliar(idFamiliar:int): List
+Capa de Dominio (Entidades ORM/JPA)
+«Entity» Cita
+- id: int
+- fecha: Date
+- hora: Time
+- estado: String
+- familiar: Familiar
+- perfilMenor: PerfilMenor
+- especialista: Especialista
++ Cita(fecha:Date, hora:Time)
++ getFecha(): Date
++ getHora(): Time
+«Entity» Calendario
+- id: int
+- fecha: Date
+- hora: Time
+- disponible: boolean
+- especialista: Especialista
++ Calendario()
++ isDisponible(): boolean
+«Entity» Especialista
+- ruc: String
+- direccion: String
+- titulosProfesionales: String
++ Especialista()
+«Entity» PerfilMenor
+- id: int
+- nombresCompletos: String
+- cedula: String
+- familiar: Familiar
++ PerfilMenor()
+usa
+usa
+usa
+usa
+usa
+gestiona
+gestiona
+gestiona
+gestiona

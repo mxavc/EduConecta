@@ -1,0 +1,865 @@
+
+    <mxGraphModel grid="0" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c_1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=24;fontStyle=1;fontFamily=Helvetica;" value="CU-05: Atender Cita — Diagrama de Secuencia de Diseño" vertex="1">
+          <mxGeometry height="34" width="4000" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c_2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#555555;fontFamily=Helvetica;" value="Java Dynamic Web Project · JSP (vista) · Servlet (controlador) · Service · DAO · Entidad (ORM/JPA) · numeración idéntica al caso de uso" vertex="1">
+          <mxGeometry height="22" width="4000" x="40" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="c_3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;" value="Especialista" vertex="1">
+          <mxGeometry height="55" width="30" x="95" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="c_4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;PaginaPrincipalEspecialista" vertex="1">
+          <mxGeometry height="60" width="190" x="245" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;SeccionCitasAsignadas" vertex="1">
+          <mxGeometry height="60" width="190" x="475" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;DetalleCita" vertex="1">
+          <mxGeometry height="60" width="190" x="705" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;HistorialAtencionMenor" vertex="1">
+          <mxGeometry height="60" width="190" x="935" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;FormularioRegistroAtencion" vertex="1">
+          <mxGeometry height="60" width="190" x="1165" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#3182CE;fontSize=10;fontStyle=1;" value="«JSP»&lt;br&gt;FormularioRegistroInasistencia" vertex="1">
+          <mxGeometry height="60" width="190" x="1395" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=10;fontStyle=1;" value="«Servlet»&lt;br&gt;AtenderCitaControlador" vertex="1">
+          <mxGeometry height="60" width="190" x="1625" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=10;fontStyle=1;" value="«Service»&lt;br&gt;AtencionService" vertex="1">
+          <mxGeometry height="60" width="190" x="1855" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;EspecialistaDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="2085" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;CitaDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="2315" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;PerfilMenorDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="2545" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;HistorialAtencionDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="2775" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=10;fontStyle=1;" value="«DAO»&lt;br&gt;AtencionDAO" vertex="1">
+          <mxGeometry height="60" width="190" x="3005" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;fontStyle=1;" value="«Entity»&lt;br&gt;Cita" vertex="1">
+          <mxGeometry height="60" width="190" x="3235" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;fontStyle=1;" value="«Entity»&lt;br&gt;HistorialAtencion" vertex="1">
+          <mxGeometry height="60" width="190" x="3465" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c_19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;fontStyle=1;" value="«Entity»&lt;br&gt;Atencion" vertex="1">
+          <mxGeometry height="60" width="190" x="3695" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_120" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="162" as="sourcePoint" />
+            <mxPoint x="110" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_121" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="162" as="sourcePoint" />
+            <mxPoint x="340" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_122" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="26" width="14" x="333" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="e_123" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="162" as="sourcePoint" />
+            <mxPoint x="570" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_124" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="3642" width="14" x="563" y="777" as="geometry" />
+        </mxCell>
+        <mxCell id="e_125" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="162" as="sourcePoint" />
+            <mxPoint x="800" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_126" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="2186" width="14" x="793" y="1053" as="geometry" />
+        </mxCell>
+        <mxCell id="e_127" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="162" as="sourcePoint" />
+            <mxPoint x="1030" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_128" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="26" width="14" x="1023" y="2765" as="geometry" />
+        </mxCell>
+        <mxCell id="e_129" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="162" as="sourcePoint" />
+            <mxPoint x="1260" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_130" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="702" width="14" x="1253" y="2845" as="geometry" />
+        </mxCell>
+        <mxCell id="e_131" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1490" y="162" as="sourcePoint" />
+            <mxPoint x="1490" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_132" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="26" width="14" x="1483" y="1133" as="geometry" />
+        </mxCell>
+        <mxCell id="e_133" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="162" as="sourcePoint" />
+            <mxPoint x="1720" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_134" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="4216" width="14" x="1713" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="e_135" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="162" as="sourcePoint" />
+            <mxPoint x="1950" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_136" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="4042" width="14" x="1943" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="e_137" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2180" y="162" as="sourcePoint" />
+            <mxPoint x="2180" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_138" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="64" width="14" x="2173" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="e_139" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="162" as="sourcePoint" />
+            <mxPoint x="2410" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_140" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="3682" width="14" x="2403" y="577" as="geometry" />
+        </mxCell>
+        <mxCell id="e_141" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2640" y="162" as="sourcePoint" />
+            <mxPoint x="2640" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_142" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="64" width="14" x="2633" y="2165" as="geometry" />
+        </mxCell>
+        <mxCell id="e_143" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2870" y="162" as="sourcePoint" />
+            <mxPoint x="2870" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_144" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1774" width="14" x="2863" y="2405" as="geometry" />
+        </mxCell>
+        <mxCell id="e_145" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3100" y="162" as="sourcePoint" />
+            <mxPoint x="3100" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_146" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="1494" width="14" x="3093" y="2645" as="geometry" />
+        </mxCell>
+        <mxCell id="e_147" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3330" y="162" as="sourcePoint" />
+            <mxPoint x="3330" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_148" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="3642" width="14" x="3323" y="617" as="geometry" />
+        </mxCell>
+        <mxCell id="e_149" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3560" y="162" as="sourcePoint" />
+            <mxPoint x="3560" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_150" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="2446" width="14" x="3553" y="1493" as="geometry" />
+        </mxCell>
+        <mxCell id="e_151" edge="1" parent="1" style="html=1;strokeWidth=1;dashed=1;strokeColor=#888888;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3790" y="162" as="sourcePoint" />
+            <mxPoint x="3790" y="4519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_152" parent="1" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=#FFFFFF;strokeColor=#444444;" value="" vertex="1">
+          <mxGeometry height="504" width="14" x="3783" y="3635" as="geometry" />
+        </mxCell>
+        <mxCell id="c_153" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="1062" width="3920" x="18" y="3393" as="geometry" />
+        </mxCell>
+        <mxCell id="c_154" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="19a. Datos incompletos [datosValidos == false]" vertex="1">
+          <mxGeometry height="24" width="700" x="118" y="3393" as="geometry" />
+        </mxCell>
+        <mxCell id="c_155" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[datosValidos == true]" vertex="1">
+          <mxGeometry height="24" width="700" x="118" y="3549" as="geometry" />
+        </mxCell>
+        <mxCell id="e_156" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="18" y="3563" as="sourcePoint" />
+            <mxPoint x="3938" y="3563" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_157" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="1560" width="3892" x="32" y="2911" as="geometry" />
+        </mxCell>
+        <mxCell id="c_158" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="18a. Cancelar registro de atención [confirmacion == false]" vertex="1">
+          <mxGeometry height="24" width="700" x="132" y="2911" as="geometry" />
+        </mxCell>
+        <mxCell id="c_159" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[confirmacion == true]" vertex="1">
+          <mxGeometry height="24" width="700" x="132" y="3241" as="geometry" />
+        </mxCell>
+        <mxCell id="e_160" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="32" y="3255" as="sourcePoint" />
+            <mxPoint x="3924" y="3255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_161" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CC0000;dashed=1;fontSize=11;fontStyle=1;fontColor=#CC0000;width=90;height=26;" value="alt" vertex="1">
+          <mxGeometry height="3684" width="3864" x="46" y="803" as="geometry" />
+        </mxCell>
+        <mxCell id="c_162" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="7a. Registrar inasistencia [cita == no asistida]" vertex="1">
+          <mxGeometry height="24" width="700" x="146" y="803" as="geometry" />
+        </mxCell>
+        <mxCell id="c_163" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#CC0000;" value="[cita == asistida] Registrar atención" vertex="1">
+          <mxGeometry height="24" width="700" x="146" y="1879" as="geometry" />
+        </mxCell>
+        <mxCell id="e_164" edge="1" parent="1" style="html=1;endArrow=none;dashed=1;strokeColor=#CC0000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="46" y="1893" as="sourcePoint" />
+            <mxPoint x="3910" y="1893" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_20" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="1. solicitarIngreso(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="215" as="sourcePoint" />
+            <mxPoint x="1720" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_21" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;rounded=0;verticalAlign=middle;align=left;fontSize=9;labelBackgroundColor=#FFFFFF;" value="ruteador(request:HttpServletRequest, response:HttpServletResponse): void">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1820" y="255" />
+              <mxPoint x="1820" y="281" />
+            </Array>
+            <mxPoint x="1725" y="255" as="sourcePoint" />
+            <mxPoint x="1725" y="281" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_22" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="2. obtenerEspecialista(idEspecialista:int): Especialista">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="309" as="sourcePoint" />
+            <mxPoint x="1950" y="309" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_23" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorId(idEspecialista:int): Especialista">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="349" as="sourcePoint" />
+            <mxPoint x="2180" y="349" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_24" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: especialista:Especialista">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2180" y="389" as="sourcePoint" />
+            <mxPoint x="1950" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_25" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: especialista:Especialista">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="429" as="sourcePoint" />
+            <mxPoint x="1720" y="429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_26" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="3. mostrarPaginaPrincipalEspecialista(especialista:Especialista): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="469" as="sourcePoint" />
+            <mxPoint x="340" y="469" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_27" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="4. consultarCitasAsignadas(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="509" as="sourcePoint" />
+            <mxPoint x="1720" y="509" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_28" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="5. listarCitasEspecialista(idEspecialista:int): List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="549" as="sourcePoint" />
+            <mxPoint x="1950" y="549" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_29" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorEspecialista(idEspecialista:int): List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="589" as="sourcePoint" />
+            <mxPoint x="2410" y="589" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_30" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«query» SELECT c FROM Cita c WHERE c.especialista.id = :idEspecialista">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="629" as="sourcePoint" />
+            <mxPoint x="3330" y="629" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_31" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: citas:List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3330" y="669" as="sourcePoint" />
+            <mxPoint x="2410" y="669" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_32" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: citas:List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="709" as="sourcePoint" />
+            <mxPoint x="1950" y="709" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_33" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: citas:List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="749" as="sourcePoint" />
+            <mxPoint x="1720" y="749" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_34" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="6. mostrarCitasAsignadas(citas:List&amp;lt;Cita&amp;gt;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="789" as="sourcePoint" />
+            <mxPoint x="570" y="789" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_35" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.1. seleccionarCita(idCita:int): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="865" as="sourcePoint" />
+            <mxPoint x="1720" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_36" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.2. obtenerCita(idCita:int): Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="905" as="sourcePoint" />
+            <mxPoint x="1950" y="905" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_37" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: cita:Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="945" as="sourcePoint" />
+            <mxPoint x="1720" y="945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_38" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.3. obtenerPerfilMenor(idCita:int): PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="985" as="sourcePoint" />
+            <mxPoint x="1950" y="985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_39" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfilMenor:PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1025" as="sourcePoint" />
+            <mxPoint x="1720" y="1025" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_40" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.4. mostrarDetalleCita(cita:Cita, perfilMenor:PerfilMenor): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1065" as="sourcePoint" />
+            <mxPoint x="800" y="1065" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_41" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.5. solicitarRegistroInasistencia(idCita:int): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1105" as="sourcePoint" />
+            <mxPoint x="1720" y="1105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_42" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.6. mostrarFormularioRegistroInasistencia(cita:Cita): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1145" as="sourcePoint" />
+            <mxPoint x="1490" y="1145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_43" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.7. ingresarObservacionYConfirmar(idCita:int, observacion:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1185" as="sourcePoint" />
+            <mxPoint x="1720" y="1185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_44" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.8. verificarObservacionCompleta(observacion:String): boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1225" as="sourcePoint" />
+            <mxPoint x="1950" y="1225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_45" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: observacionValida:boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1265" as="sourcePoint" />
+            <mxPoint x="1720" y="1265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_46" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.9. crearRegistroInasistencia(cita:Cita, observacion:String): Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1305" as="sourcePoint" />
+            <mxPoint x="1950" y="1305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_47" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="setObservacionInasistencia(observacion:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1345" as="sourcePoint" />
+            <mxPoint x="3330" y="1345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_48" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: cita:Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1385" as="sourcePoint" />
+            <mxPoint x="1720" y="1385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_49" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.10. vincularInasistencia(cita:Cita, perfilMenor:PerfilMenor): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1425" as="sourcePoint" />
+            <mxPoint x="1950" y="1425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_50" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.11. incorporarInasistenciaAlHistorial(historial:HistorialAtencion, cita:Cita): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1465" as="sourcePoint" />
+            <mxPoint x="1950" y="1465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_51" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="registrarInasistencia(cita:Cita): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1505" as="sourcePoint" />
+            <mxPoint x="3560" y="1505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_52" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.12. actualizarEstadoCita(cita:Cita, estado:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1545" as="sourcePoint" />
+            <mxPoint x="1950" y="1545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_53" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="setEstado(&quot;NO_ASISTIDA&quot;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1585" as="sourcePoint" />
+            <mxPoint x="3330" y="1585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_54" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.13. registrarCambios(cita:Cita): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1625" as="sourcePoint" />
+            <mxPoint x="1950" y="1625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_55" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="actualizar(cita:Cita): Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1665" as="sourcePoint" />
+            <mxPoint x="2410" y="1665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_56" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«merge» em.merge(cita)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="1705" as="sourcePoint" />
+            <mxPoint x="3330" y="1705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_57" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.14. listarCitasEspecialista(idEspecialista:int): List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1745" as="sourcePoint" />
+            <mxPoint x="1950" y="1745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_58" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: citas:List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="1785" as="sourcePoint" />
+            <mxPoint x="1720" y="1785" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_59" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.15. mostrarMensajeExito(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1825" as="sourcePoint" />
+            <mxPoint x="570" y="1825" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_60" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7a.16. mostrarCitasAsignadas(citas:List&amp;lt;Cita&amp;gt;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1865" as="sourcePoint" />
+            <mxPoint x="570" y="1865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_61" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="7. seleccionarCita(idCita:int): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1937" as="sourcePoint" />
+            <mxPoint x="1720" y="1937" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_62" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="8. obtenerCita(idCita:int): Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="1977" as="sourcePoint" />
+            <mxPoint x="1950" y="1977" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_63" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorId(idCita:int): Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2017" as="sourcePoint" />
+            <mxPoint x="2410" y="2017" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_64" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: cita:Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="2057" as="sourcePoint" />
+            <mxPoint x="1950" y="2057" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_65" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: cita:Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2097" as="sourcePoint" />
+            <mxPoint x="1720" y="2097" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_66" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="9. obtenerPerfilMenor(idCita:int): PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="2137" as="sourcePoint" />
+            <mxPoint x="1950" y="2137" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_67" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorCita(idCita:int): PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2177" as="sourcePoint" />
+            <mxPoint x="2640" y="2177" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_68" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfilMenor:PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2640" y="2217" as="sourcePoint" />
+            <mxPoint x="1950" y="2217" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_69" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfilMenor:PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2257" as="sourcePoint" />
+            <mxPoint x="1720" y="2257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_70" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="10. mostrarDetalleCita(cita:Cita, perfilMenor:PerfilMenor): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="2297" as="sourcePoint" />
+            <mxPoint x="800" y="2297" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_71" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="11. consultarHistorialMenor(idPerfilMenor:int): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="2337" as="sourcePoint" />
+            <mxPoint x="1720" y="2337" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_72" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="12. obtenerHistorial(idPerfilMenor:int): HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="2377" as="sourcePoint" />
+            <mxPoint x="1950" y="2377" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_73" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorPerfilMenor(idPerfilMenor:int): HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2417" as="sourcePoint" />
+            <mxPoint x="2870" y="2417" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_74" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«query» SELECT h FROM HistorialAtencion h WHERE h.perfilMenor.id = :idPerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2870" y="2457" as="sourcePoint" />
+            <mxPoint x="3560" y="2457" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_75" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: historial:HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3560" y="2497" as="sourcePoint" />
+            <mxPoint x="2870" y="2497" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_76" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: historial:HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2870" y="2537" as="sourcePoint" />
+            <mxPoint x="1950" y="2537" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_77" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: historial:HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2577" as="sourcePoint" />
+            <mxPoint x="1720" y="2577" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_78" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="13. obtenerAtenciones(historial:HistorialAtencion): List&amp;lt;Atencion&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="2617" as="sourcePoint" />
+            <mxPoint x="1950" y="2617" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_79" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="buscarPorHistorial(idHistorial:int): List&amp;lt;Atencion&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2657" as="sourcePoint" />
+            <mxPoint x="3100" y="2657" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_80" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: atenciones:List&amp;lt;Atencion&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3100" y="2697" as="sourcePoint" />
+            <mxPoint x="1950" y="2697" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_81" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: atenciones:List&amp;lt;Atencion&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="2737" as="sourcePoint" />
+            <mxPoint x="1720" y="2737" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_82" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="14. mostrarHistorialMenor(historial:HistorialAtencion, atenciones:List&amp;lt;Atencion&amp;gt;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="2777" as="sourcePoint" />
+            <mxPoint x="1030" y="2777" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_83" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="15. solicitarRegistroAtencion(idCita:int): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="2817" as="sourcePoint" />
+            <mxPoint x="1720" y="2817" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_84" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="16. mostrarFormularioRegistroAtencion(cita:Cita): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="2857" as="sourcePoint" />
+            <mxPoint x="1260" y="2857" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_85" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="17. ingresarInformacionAtencion(observaciones:String, informacionRelevante:String, recomendaciones:String, diagnostico:String, indicacionesDeSeguimiento:String, notasAdicionales:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="2897" as="sourcePoint" />
+            <mxPoint x="1720" y="2897" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_86" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="18a.1. cancelarRegistroAtencion(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="2973" as="sourcePoint" />
+            <mxPoint x="1720" y="2973" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_87" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;rounded=0;verticalAlign=middle;align=left;fontSize=9;labelBackgroundColor=#FFFFFF;" value="18a.2. descartarDatosNoConfirmados(): void">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1820" y="3013" />
+              <mxPoint x="1820" y="3039" />
+            </Array>
+            <mxPoint x="1725" y="3013" as="sourcePoint" />
+            <mxPoint x="1725" y="3039" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_88" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="18a.3. obtenerCita(idCita:int): Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3067" as="sourcePoint" />
+            <mxPoint x="1950" y="3067" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_89" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: cita:Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3107" as="sourcePoint" />
+            <mxPoint x="1720" y="3107" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_90" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="18a.4. obtenerPerfilMenor(idCita:int): PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3147" as="sourcePoint" />
+            <mxPoint x="1950" y="3147" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_91" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: perfilMenor:PerfilMenor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3187" as="sourcePoint" />
+            <mxPoint x="1720" y="3187" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_92" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="18a.5. mostrarDetalleCita(cita:Cita, perfilMenor:PerfilMenor): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3227" as="sourcePoint" />
+            <mxPoint x="800" y="3227" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_93" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="18. confirmarRegistro(): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="3299" as="sourcePoint" />
+            <mxPoint x="1720" y="3299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_94" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="19. verificarCamposAtencion(datos:Map): boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3339" as="sourcePoint" />
+            <mxPoint x="1950" y="3339" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_95" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: datosValidos:boolean">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3379" as="sourcePoint" />
+            <mxPoint x="1720" y="3379" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_96" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9C4;strokeColor=#D6B656;align=left;fontSize=9;fontStyle=2;" value="19a.1. Identificar campos obligatorios sin completar" vertex="1">
+          <mxGeometry height="30" width="340" x="70" y="3447" as="geometry" />
+        </mxCell>
+        <mxCell id="e_97" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="19a.2. mostrarMensajeError(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3495" as="sourcePoint" />
+            <mxPoint x="1260" y="3495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_98" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="19a.3. mostrarFormularioRegistroAtencion(datosIngresados:Map): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3535" as="sourcePoint" />
+            <mxPoint x="1260" y="3535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_99" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="20. crearAtencion(datos:Map): Atencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3607" as="sourcePoint" />
+            <mxPoint x="1950" y="3607" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_100" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«create» Atencion(observaciones, informacionRelevante, recomendaciones, diagnostico, indicacionesDeSeguimiento, notasAdicionales)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3647" as="sourcePoint" />
+            <mxPoint x="3790" y="3647" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_101" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: atencion:Atencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3790" y="3687" as="sourcePoint" />
+            <mxPoint x="1950" y="3687" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_102" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: atencion:Atencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3727" as="sourcePoint" />
+            <mxPoint x="1720" y="3727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_103" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="21. vincularAtencion(atencion:Atencion, cita:Cita, idEspecialista:int, perfilMenor:PerfilMenor): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3767" as="sourcePoint" />
+            <mxPoint x="1950" y="3767" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_104" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="setCita(cita:Cita): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3807" as="sourcePoint" />
+            <mxPoint x="3790" y="3807" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_105" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="setEspecialista(especialista:Especialista): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3847" as="sourcePoint" />
+            <mxPoint x="3790" y="3847" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_106" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="22. incorporarAtencionAlHistorial(historial:HistorialAtencion, atencion:Atencion): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3887" as="sourcePoint" />
+            <mxPoint x="1950" y="3887" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_107" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="agregarAtencion(atencion:Atencion): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="3927" as="sourcePoint" />
+            <mxPoint x="3560" y="3927" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_108" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="23. actualizarEstadoCita(cita:Cita, estado:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="3967" as="sourcePoint" />
+            <mxPoint x="1950" y="3967" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_109" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="setEstado(&quot;ATENDIDA&quot;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="4007" as="sourcePoint" />
+            <mxPoint x="3330" y="4007" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_110" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="24. registrarCambios(atencion:Atencion, cita:Cita, historial:HistorialAtencion): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="4047" as="sourcePoint" />
+            <mxPoint x="1950" y="4047" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_111" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="insertar(atencion:Atencion): Atencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="4087" as="sourcePoint" />
+            <mxPoint x="3100" y="4087" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_112" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«persist» em.persist(atencion)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3100" y="4127" as="sourcePoint" />
+            <mxPoint x="3790" y="4127" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_113" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="actualizar(historial:HistorialAtencion): HistorialAtencion">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="4167" as="sourcePoint" />
+            <mxPoint x="2870" y="4167" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_114" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="actualizar(cita:Cita): Cita">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="4207" as="sourcePoint" />
+            <mxPoint x="2410" y="4207" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_115" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="«merge» em.merge(cita)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2410" y="4247" as="sourcePoint" />
+            <mxPoint x="3330" y="4247" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_116" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="25. listarCitasEspecialista(idEspecialista:int): List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="4287" as="sourcePoint" />
+            <mxPoint x="1950" y="4287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_117" edge="1" parent="1" style="html=1;endArrow=open;endSize=8;dashed=1;strokeWidth=1;strokeColor=#555555;verticalAlign=bottom;align=center;fontSize=9;fontStyle=2;labelBackgroundColor=#FFFFFF;" value="return: citas:List&amp;lt;Cita&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1950" y="4327" as="sourcePoint" />
+            <mxPoint x="1720" y="4327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_118" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="26. mostrarMensajeExito(mensaje:String): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="4367" as="sourcePoint" />
+            <mxPoint x="570" y="4367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_119" edge="1" parent="1" style="html=1;endArrow=block;endFill=1;strokeWidth=1.3;strokeColor=#333333;verticalAlign=bottom;align=center;fontSize=9;labelBackgroundColor=#FFFFFF;" value="27. mostrarCitasAsignadas(citas:List&amp;lt;Cita&amp;gt;): void">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="4407" as="sourcePoint" />
+            <mxPoint x="570" y="4407" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  

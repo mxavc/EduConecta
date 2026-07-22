@@ -1,0 +1,25 @@
+Diagrama de robustez — CU-03 Registrar Perfil de Menor
+Familiar
+RegistrarPerfilMenor Controlador
+Interfaces «boundary»
+Página principal del Familiar
+Sección Perfiles de menores
+Formulario de registro de menor
+Página principal 3. Mostrar página principal del Familiar.
+Sección Perfiles de menores 6. Mostrar sección Perfiles de menores (perfiles). 10a.4. Mostrar sección Perfiles de menores. 16. Mostrar mensaje: «Perfil de menor registrado con éxito». 17. Mostrar sección Perfiles de menores (lista actualizada).
+Formulario de registro de menor 8. Mostrar formulario de registro de menor. 10a.2. Descartar información no confirmada. 11a.2. Mostrar mensaje: datos incompletos o no válidos. 11a.3. Mantener formulario con datos ingresados. 12a.2. Mostrar mensaje: «El menor ya se encuentra registrado». 12a.3. Mantener formulario de registro.
+Entidades del dominio «entity»
+Familiar
+PerfilMenor
+HistorialAtencion
+Operaciones sobre Familiar 2. Obtener información del familiar. 14. Vincular Perfil del Menor con el Familiar.
+Operaciones sobre PerfilMenor 5. Buscar perfiles de menores vinculados. 11. Verificar campos completos e información válida. 11a.1. Identificar campos incompletos o información no válida. 12. Verificar menor no registrado previamente. 12a.1. Identificar menor ya registrado. 13. Crear Perfil del Menor. 15. Obtener lista actualizada de perfiles. 10a.3. Obtener lista de perfiles de menores. 12a.4. No crear un nuevo Perfil de Menor.
+Operaciones sobre HistorialAtencion 13. Crear historial de atención del menor. (composición 1..1 del modelo de dominio).
+1. Solicitar ingresar a la Página principal del Familiar 4. Consultar perfiles de menores 7. Solicitar registrar nuevo Perfil de Menor 9. Ingresar información del menor 10. Confirmar registro 10a.1. Cancelar registro
+2 y 14
+3. Mostrar página principal del Familiar
+5, 10a.3, 11-12a.4, 13 y 15
+13. Crear historial de atención
+6, 10a.4, 16 y 17
+8, 10a.2, 11a.2-11a.3, 12a.2-12a.3
+Convenciones Boundary: interfaz presentada al Familiar. Control: coordina el flujo de registro del menor. Entity: conceptos del negocio involucrados en validación, creación y vinculación. Las descripciones extensas se detallan en notas para evitar cruces y superposición.
